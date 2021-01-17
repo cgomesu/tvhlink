@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 ########################################################################
-# Streamlink helper script for TVHeadend pipe://
+# Streamlink helper script for TVHeadend pipe:// with multiple URLs
 #
 # Note: Keep it POSIX shell compliant for compatibility
 #
@@ -20,10 +20,10 @@ usage () {
   echo ''
   echo 'Usage:'
   echo ''
-  echo "$0"' [OPTIONS] <URL> '
+  echo "$0"' [OPTIONS] <URLS> '
   echo ''
-  echo '  URL:'
-  echo '    One or more http(s) URLs. If multiple, use space to separate them. Order defines priority.'
+  echo '  URLS:'
+  echo '    Multiple http(s) URLs separted by spaces. The order defines priority.'
   echo ''
   echo '  OPTIONS:'
   echo '    -h  Show this help message.'
