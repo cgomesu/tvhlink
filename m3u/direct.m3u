@@ -1,0 +1,9 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Adult Swim (US)" tvg-language="French" tvg-country="FR" tvg-logo="https://en.wikipedia.org/wiki/Adult_Swim#/media/File:Adult_Swim_2003_logo.svg" group-title="Entertainment",Adult Swim (US)
+pipe:///usr/bin/streamlink https://www.adultswim.com/streams best --stdout --http-header 'X-Forwarded-For=3.0.0.0' 
+#EXTINF:-1 tvg-name="ARD Live (Germany)" tvg-language="German" tvg-country="DE" tvg-logo="https://en.wikipedia.org/wiki/ARD_(broadcaster)#/media/File:ARD_Logo_2019.svg" group-title="Entertainment",ARD Live (Germany)
+pipe:///usr/bin/streamlink https://live.daserste.de/ best --stdout --http-header 'X-Forwarded-For=5.9.0.0'
+#EXTINF:-1 tvg-name="ARTE TV (France)" tvg-language="French" tvg-country="FR" tvg-logo="https://en.wikipedia.org/wiki/Arte#/media/File:Arte_Logo_2017.svg" group-title="Entertainment",ARTE TV (France)
+pipe:///usr/bin/streamlink https://www.arte.tv/fr/direct/ best --stdout --http-header 'X-Forwarded-For=2.0.0.0'
+#EXTINF:-1 tvg-name="El Nueve (Argentina)" tvg-language="Spanish" tvg-country="AR" tvg-logo="https://en.wikipedia.org/wiki/El_Nueve#/media/File:Canal_9_2015.png" group-title="Entertainment",El Nueve (Argentina)
+pipe:///usr/bin/streamlink https://www.elnueve.com.ar/en-vivo/ best --stdout --http-header 'X-Forwarded-For=66.60.0.0'
