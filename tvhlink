@@ -33,20 +33,20 @@ usage () {
   echo ''
 }
 
-if [ -z "$(command -v streamlink)" ]; then echo 'ERROR: streamlink executable not found'; exit 1; fi
+if [ -z "$(command -v streamlink)" ]; then echo '[tvhlink] ERROR: streamlink executable not found'; exit 1; fi
 
 while getopts 'hq:' OPT; do
   case $OPT in
     h) usage; exit 0;;
-    q) QUALITY="$OPTARG"; if [ -z "$QUALITY" ]; then QUALITY="best"; fi;;
-    \?) echo 'ERROR: Invalid option in the arguments.'; usage; exit 1;;
+    q) QUALITY="$OPTARG";;
+    \?) echo '[tvhlink] ERROR: Invalid option in the arguments.'; usage; exit 1;;
   esac
 done
 
 # loop one or more URLs provided as arg
 for URL in "$@"; do
-  # use pattern match to find URL
-  if [ ! "$URL" = "${URL#http}" ]; then streamlink --stdout --default-stream "$QUALITY" --url "$URL"; fi
+  # use pattern match to find URL; QUALITY uses deault if empty
+  if [ ! "$URL" = "${URL#http}" ]; then streamlink --stdout --default-stream "${QUALITY:-best}" --url "$URL"; fi
 done
 
 # EOF means no stream found; exit with error
