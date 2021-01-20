@@ -3,25 +3,28 @@
 ###################################################################################
 # Custom script to install Streamlink on the TVHeadend LinuxServer docker container
 ###################################################################################
-# How-to:
-#   1. Copy 'install_streamlink.sh' to /config/custom-cont-init.d
-#   2. Start/Restart the tvheadend container
+# How-To:
+#  1. Copy 'install_streamlink.sh' to /config/custom-cont-init.d
+#  2. Start/Restart the tvheadend container
 ###################################################################################
 # Author: cgomesu
 # Repo: https://github.com/cgomesu/tvhlink
-# Note: Keep it POSIX sh compliant for compatibility
 ###################################################################################
-# LinuxServer image comes with Python3 and the community repo source enabled
+# Notes
+#  - LinuxServer image comes with Python3 and the community repo source enabled
+#  - Keep this script POSIX sh compliant for compatibility
+#  - Use shellcheck
+###################################################################################
 #
 # Base image URL target:
-#   ghcr.io/linuxserver/tvheadend
+#  ghcr.io/linuxserver/tvheadend
 #
 # Script installs and updates the pkg: 
-#   pip3, setuptools, streamlink
+#  pip3, setuptools, streamlink
 #
 # Tested images (tvheadend:latest):
-#   x86-64:
-#     @sha256:c05411d415a097b7f7cd98eef7414e09e035e6f3c740b016a6b77769f1278475
+#  x86-64:
+#   @sha256:c05411d415a097b7f7cd98eef7414e09e035e6f3c740b016a6b77769f1278475
 #
 ###################################################################################
 
@@ -84,7 +87,7 @@ streamlink_install () {
   else
     end 'APK Critical error: Unable to update pkg list. Check connectivity.' 1
   fi
-  message 'Finsihed APK update and installs.' 'info'
+  message 'Finsihed all APK and PIP3 updates and installs.' 'info'
 }
 
 
@@ -94,9 +97,9 @@ trap 'end "Received a signal to stop" 1' INT HUP TERM
 if ! check_root; then end 'User is not root. This script needs root permission.' 1; fi
 
 if check_streamlink; then
-  message 'Updating Streamlink...'; streamlink_update
+  message 'Updating Streamlink...' 'info'; streamlink_update
 else
-  message 'Installing Streamlink...'; streamlink_install
+  message 'Installing Streamlink...' 'info'; streamlink_install
 fi
 
 end 'Completed without errors.' 0
