@@ -1,20 +1,21 @@
 #!/usr/bin/env sh
 
-###################################################################################
-# Custom script to install Streamlink on the TVHeadend LinuxServer docker container
-###################################################################################
+#########################################################################################
+# Script to install and update Streamlink on the TVHeadend LinuxServer docker container #
+#########################################################################################
 # How-To:
 #  1. Copy 'streamlink_for_tvh_container.sh' to /config/custom-cont-init.d
 #  2. Start/Restart the tvheadend container
-###################################################################################
+#########################################################################################
 # Author: cgomesu
 # Repo: https://github.com/cgomesu/tvhlink
-###################################################################################
+#########################################################################################
 # Notes
 #  - LinuxServer image comes with Python3 and the community repo source enabled
 #  - Keep this script POSIX sh compliant for compatibility
 #  - Use shellcheck
-###################################################################################
+#########################################################################################
+# Additional info
 #
 # Base image URL target:
 #  ghcr.io/linuxserver/tvheadend
@@ -25,10 +26,9 @@
 # Tested images (tvheadend:latest):
 #  x86-64:
 #   @sha256:c05411d415a097b7f7cd98eef7414e09e035e6f3c740b016a6b77769f1278475
-#
-###################################################################################
+#########################################################################################
 
-# takes msg and status as args
+# takes msg ($1) and status ($2) as args
 end () {
   echo '*********************************************'
   echo '* Finished Streamlink install/update script *'
@@ -37,9 +37,9 @@ end () {
   exit "$2"
 }
 
-# takes message and level as args
+# takes message ($1) and level ($2) as args
 message () {
-  if [ "$2" = 'info' ]; then echo "[TVHlink] $1"; else echo "[TVHlink] [ERROR] $1"; fi
+  echo "[TVHlink] [$2] $1"
 }
 
 start () {
@@ -61,9 +61,9 @@ check_streamlink () {
 }
 
 streamlink_update () {
-  if [ -z "$(command -v pip3)" ]; then end 'Unusual behavior: pip3 is not installed.' 1;
+  if [ -z "$(command -v pip3)" ]; then end 'Unusual behavior: pip3 should be installed but is not.' 1;
   else
-    if pip3 install --upgrade streamlink; then 
+    if pip3 install --no-cache --upgrade streamlink; then 
       message "Streamlink version: $(streamlink --version)." 'info'
     else 
       message 'Streamlink update failed!' 'error'
@@ -93,7 +93,10 @@ streamlink_install () {
 
 ############
 # main logic
+start
+
 trap 'end "Received a signal to stop" 1' INT HUP TERM
+
 if ! check_root; then end 'User is not root. This script needs root permission.' 1; fi
 
 if check_streamlink; then
