@@ -103,5 +103,3 @@ else
 fi
 
 end 'Completed without errors.' 0
-
-exit 0
