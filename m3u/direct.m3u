@@ -3,8 +3,6 @@
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.reuters.com/video/
 #EXTINF:-1 tvg-name="CBS News (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjvQz8v5yU3aNJ9YPLkCC9DejFuobFpZ4Pmn1z6=s176-c-k-c0x00ffffff-no-rj" group-title="News",CBS News (US)
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/
-#EXTINF:-1 tvg-name="CBS News NY (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjvQz8v5yU3aNJ9YPLkCC9DejFuobFpZ4Pmn1z6=s176-c-k-c0x00ffffff-no-rj" group-title="News",CBS News NY (US)
-pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/cbs-local-ny/
 #EXTINF:-1 tvg-name="CBS News Sports (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjvQz8v5yU3aNJ9YPLkCC9DejFuobFpZ4Pmn1z6=s176-c-k-c0x00ffffff-no-rj" group-title="Sports",CBS News Sports (US)
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/cbs-sports-hq/
 #EXTINF:-1 tvg-name="NBCNews Now (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngTmqXltPLLBOvOdYylFPlTQDrX5K8bykS0JUUUqyE=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",NBCNews Now (US)
