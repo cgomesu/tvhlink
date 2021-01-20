@@ -4,7 +4,7 @@
 # Custom script to install Streamlink on the TVHeadend LinuxServer docker container
 ###################################################################################
 # How-To:
-#  1. Copy 'install_streamlink.sh' to /config/custom-cont-init.d
+#  1. Copy 'streamlink_for_tvh_container.sh' to /config/custom-cont-init.d
 #  2. Start/Restart the tvheadend container
 ###################################################################################
 # Author: cgomesu
@@ -80,12 +80,12 @@ streamlink_install () {
         if ! pip3 install --no-cache --upgrade setuptools; then message 'PIP3: Error while upgrading setuptools.' 'error'; fi
         if ! pip3 install --no-cache streamlink; then message 'PIP3: Error while installing Streamlink.' 'error' ; fi
     else
-      end 'APK Critical error: Unable install required packages.' 1
+      end 'APK: Critical error. Unable install required packages.' 1
     fi
     message 'APK: Removing packages no longer required.' 'info'
     apk del .build-deps gcc musl-dev
   else
-    end 'APK Critical error: Unable to update pkg list. Check connectivity.' 1
+    end 'APK: Critical error. Unable to update pkg list. Check connectivity.' 1
   fi
   message 'Finsihed all APK and PIP3 updates and installs.' 'info'
 }
