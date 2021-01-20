@@ -1,19 +1,28 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="Adult Swim (US)" tvg-language="French" tvg-country="FR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngPa-IW_v4g4wy7mpMU2sRQj0wbljAkhJGImh5slA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",Adult Swim (US)
-pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=3.0.0.0' --default-stream 720p,best --url https://www.adultswim.com/streams
+#EXTINF:-1 tvg-name="Reuters Now (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjZ2qP-yHF9OABLDctxVP2YQlmDzlnf7vhfhFjiCwc=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",Reuters Now (US)
+pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.reuters.com/video/
+#EXTINF:-1 tvg-name="CBS News (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjvQz8v5yU3aNJ9YPLkCC9DejFuobFpZ4Pmn1z6=s176-c-k-c0x00ffffff-no-rj" group-title="News",CBS News (US)
+pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/
+#EXTINF:-1 tvg-name="CBS News NY (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjvQz8v5yU3aNJ9YPLkCC9DejFuobFpZ4Pmn1z6=s176-c-k-c0x00ffffff-no-rj" group-title="News",CBS News NY (US)
+pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/cbs-local-ny/
+#EXTINF:-1 tvg-name="CBS News Sports (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjvQz8v5yU3aNJ9YPLkCC9DejFuobFpZ4Pmn1z6=s176-c-k-c0x00ffffff-no-rj" group-title="Sports",CBS News Sports (US)
+pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/cbs-sports-hq/
+#EXTINF:-1 tvg-name="NBCNews Now (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngTmqXltPLLBOvOdYylFPlTQDrX5K8bykS0JUUUqyE=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",NBCNews Now (US)
+pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.nbcnews.com/now
+#EXTINF:-1 tvg-name="RTP 1 (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngDrUzb6uacGFiIj7TqoD74MGQ0cU4ytKeIJHftKw=s176-c-k-c0x00ffffff-no-rj" group-title="Enterainment",RTP 1 (PT)
+pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.rtp.pt/play/direto/rtp1
+#EXTINF:-1 tvg-name="RTP 2 (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngDrUzb6uacGFiIj7TqoD74MGQ0cU4ytKeIJHftKw=s176-c-k-c0x00ffffff-no-rj" group-title="Enterainment",RTP 2 (PT)
+pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.rtp.pt/play/direto/rtp2
+#EXTINF:-1 tvg-name="RTP 3 (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngDrUzb6uacGFiIj7TqoD74MGQ0cU4ytKeIJHftKw=s176-c-k-c0x00ffffff-no-rj" group-title="Enterainment",RTP 3 (PT)
+pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.rtp.pt/play/direto/rtp3
+#EXTINF:-1 tvg-name="RTP Internacional (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngDrUzb6uacGFiIj7TqoD74MGQ0cU4ytKeIJHftKw=s176-c-k-c0x00ffffff-no-rj" group-title="Enterainment",RTP Internacional (PT)
+pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.rtp.pt/play/direto/rtpinternacional
+#EXTINF:-1 tvg-name="El Nueve (Argentina)" tvg-language="Spanish" tvg-country="AR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngVIFS-_5r2YEBqHco9xA6nwEy--9BniYispdZK=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",El Nueve (Argentina)
+pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=66.60.0.0' --default-stream 720p,best --url https://www.elnueve.com.ar/en-vivo/
 #EXTINF:-1 tvg-name="ARD Live (Germany)" tvg-language="German" tvg-country="DE" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjHzll_QGwjHbbBuALURQyRH2R7KY7JXRytN3Wi034=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",ARD Live (Germany)
 pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=5.9.0.0' --default-stream 720p,best --url https://live.daserste.de/
 #EXTINF:-1 tvg-name="ARTE TV (France)" tvg-language="French" tvg-country="FR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwng7yLO5dG3B6PZEeFnNls13mGbmTInHA-ygdP58=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",ARTE TV (France)
 pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=2.0.0.0' --default-stream 720p,best --url https://www.arte.tv/fr/direct/
-#EXTINF:-1 tvg-name="CBSNews (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjvQz8v5yU3aNJ9YPLkCC9DejFuobFpZ4Pmn1z6=s176-c-k-c0x00ffffff-no-rj" group-title="News",CBSNews (US)
-pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/
-#EXTINF:-1 tvg-name="CBSN NY (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjvQz8v5yU3aNJ9YPLkCC9DejFuobFpZ4Pmn1z6=s176-c-k-c0x00ffffff-no-rj" group-title="News",CBSN NY (US)
-pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/cbs-local-ny/
-#EXTINF:-1 tvg-name="CBSN Sports (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjvQz8v5yU3aNJ9YPLkCC9DejFuobFpZ4Pmn1z6=s176-c-k-c0x00ffffff-no-rj" group-title="Sports",CBSN Sports (US)
-pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/cbs-sports-hq/
-#EXTINF:-1 tvg-name="El Nueve (Argentina)" tvg-language="Spanish" tvg-country="AR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngVIFS-_5r2YEBqHco9xA6nwEy--9BniYispdZK=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",El Nueve (Argentina)
-pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=66.60.0.0' --default-stream 720p,best --url https://www.elnueve.com.ar/en-vivo/
-#EXTINF:-1 tvg-name="NBCNews Now (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngTmqXltPLLBOvOdYylFPlTQDrX5K8bykS0JUUUqyE=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",NBCNews Now (US)
-pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.nbcnews.com/now
-#EXTINF:-1 tvg-name="Reuters Now (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjZ2qP-yHF9OABLDctxVP2YQlmDzlnf7vhfhFjiCwc=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",Reuters Now (US)
-pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.reuters.com/video/
+#EXTINF:-1 tvg-name="Adult Swim (US)" tvg-language="French" tvg-country="FR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngPa-IW_v4g4wy7mpMU2sRQj0wbljAkhJGImh5slA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",Adult Swim (US)
+pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=3.0.0.0' --default-stream 720p,best --url https://www.adultswim.com/streams
+
