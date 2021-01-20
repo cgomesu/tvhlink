@@ -21,6 +21,6 @@ pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=66.60.0.0
 pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=5.9.0.0' --default-stream 720p,best --url https://live.daserste.de/
 #EXTINF:-1 tvg-name="ARTE TV (France)" tvg-language="French" tvg-country="FR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwng7yLO5dG3B6PZEeFnNls13mGbmTInHA-ygdP58=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",ARTE TV (France)
 pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=2.0.0.0' --default-stream 720p,best --url https://www.arte.tv/fr/direct/
-#EXTINF:-1 tvg-name="Adult Swim (US)" tvg-language="French" tvg-country="FR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngPa-IW_v4g4wy7mpMU2sRQj0wbljAkhJGImh5slA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",Adult Swim (US)
+#EXTINF:-1 tvg-name="Adult Swim (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngPa-IW_v4g4wy7mpMU2sRQj0wbljAkhJGImh5slA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",Adult Swim (US)
 pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=3.0.0.0' --default-stream 720p,best --url https://www.adultswim.com/streams
 
