@@ -45,10 +45,6 @@ pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https:/
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://youtube.com/channel/UCMpn1qLudF-zb4M4bqxLIbw
 #EXTINF:-1 tvg-name="Monterey Bay Aquarium" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngYEIbcvoqrpFNGZ77AqPcExMO_6uxyFeP5b8hbuhc=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",Monterey Bay Aquarium
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://youtube.com/user/MontereyBayAquarium
-#EXTINF:-1 tvg-name="City of Deerfield Beach" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhy-WvE24FK6NrPK0F63H9kJ2InZBmOp1bDrEhVAg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",City of Deerfield Beach
-pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://youtube.com/user/CityofDeerfieldBeach
-#EXTINF:-1 tvg-name="Surfline" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhW7h30K5ikSfCYI97zrbGND4D_B2KyWANqawrabm0=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",Surfline
-pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://youtube.com/user/surfline
 #EXTINF:-1 tvg-name="Explore Oceans" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwni6OyzgBuQ9PykxMk3kzVP930WOxwAnVRuIHKkrIA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",Explore Oceans
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://youtube.com/channel/UCSyg9cb3Iq-NtlbxqNB9wGw
 #EXTINF:-1 tvg-name="Explore Nature" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwniC_uCWAU0bVj3Z5qSSTBnVfxlCYC_ObXBdK6Xz=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",Explore Nature
