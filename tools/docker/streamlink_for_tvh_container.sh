@@ -20,12 +20,14 @@
 # Base image URL target:
 #  ghcr.io/linuxserver/tvheadend
 #
-# Script installs and updates the pkg: 
+# Script installs and updates the pkg:
 #  pip3, setuptools, streamlink
 #
 # Tested images (tvheadend:latest):
 #  x86-64:
 #   @sha256:c05411d415a097b7f7cd98eef7414e09e035e6f3c740b016a6b77769f1278475
+#  arm:
+#   @sha256:d5fc6f2e77beecb655ec5325f002109cd5d5c82c9d2fc3ee39dbb4fc098cd328
 #########################################################################################
 
 # takes msg ($1) and status ($2) as args
@@ -63,9 +65,9 @@ check_streamlink () {
 streamlink_update () {
   if [ -z "$(command -v pip3)" ]; then end 'Unusual behavior: pip3 should be installed but is not.' 1;
   else
-    if pip3 install --no-cache --upgrade streamlink; then 
+    if pip3 install --no-cache --upgrade streamlink; then
       message "Streamlink version: $(streamlink --version)." 'info'
-    else 
+    else
       message 'Streamlink update failed!' 'error'
     fi
   fi
@@ -73,7 +75,7 @@ streamlink_update () {
 
 streamlink_install () {
   message 'APK: Updating pkg list.' 'info'
-  if apk update; then 
+  if apk update; then
     message 'APK: Installing required packages.' 'info'
     if apk add --no-cache py3-pip && apk add --no-cache --virtual .build-deps gcc musl-dev; then
         message 'PIP3: Updating and installing required packages.' 'info'
