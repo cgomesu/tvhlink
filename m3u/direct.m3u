@@ -3,8 +3,6 @@
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/
 #EXTINF:-1 tvg-name="CBS News Sports (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjvQz8v5yU3aNJ9YPLkCC9DejFuobFpZ4Pmn1z6=s176-c-k-c0x00ffffff-no-rj" group-title="Sports",CBS News Sports (US)
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/cbs-sports-hq/
-#EXTINF:-1 tvg-name="NBCNews Now (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngTmqXltPLLBOvOdYylFPlTQDrX5K8bykS0JUUUqyE=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",NBCNews Now (US)
-pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.nbcnews.com/now
 #EXTINF:-1 tvg-name="RTP 1 (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngDrUzb6uacGFiIj7TqoD74MGQ0cU4ytKeIJHftKw=s176-c-k-c0x00ffffff-no-rj" group-title="Enterainment",RTP 1 (PT)
 pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.rtp.pt/play/direto/rtp1
 #EXTINF:-1 tvg-name="RTP 2 (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngDrUzb6uacGFiIj7TqoD74MGQ0cU4ytKeIJHftKw=s176-c-k-c0x00ffffff-no-rj" group-title="Enterainment",RTP 2 (PT)
