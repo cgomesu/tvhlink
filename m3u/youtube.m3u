@@ -103,3 +103,5 @@ pipe:///usr/bin/env streamlink --stdout --hls-segment-threads 3 --hls-segment-st
 pipe:///usr/bin/env streamlink --stdout --hls-segment-threads 3 --hls-segment-stream-data --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UCKKePR9Fx8JQb0AVh4Qf6Jg/live
 #EXTINF:-1 tvg-name="Music Brokers" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSrZiXZ-1fsayt4M4Heh5qdv0I47ZTQddsoTpmMnQ=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",Music Brokers
 pipe:///usr/bin/env streamlink --stdout --hls-segment-threads 3 --hls-segment-stream-data --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/user/musicbrokersarg/live
+#EXTINF:-1 tvg-name="Nightride FM" tvg-logo="https://yt3.ggpht.com/04tHcjjExWHYgBtyKhN1wFlp1S4-vDIFVqtXV6ipDK4SPPJCRZhW6qdJlvihzBmXMLZY2f9O=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",Nightride FM
+pipe:///usr/bin/env streamlink --stdout --hls-segment-threads 3 --hls-segment-stream-data --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UCJ80_CMnIOrKtMyFbIFIQ7A/live
