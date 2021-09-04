@@ -1,4 +1,3 @@
-# This playlist depends on the eduplay.sh script, which must be stored at /config/tools/ and executable by your TVHeadend user. See the tools/ repo dir.
 #EXTM3U
 #EXTINF:-1 tvg-name="TV Brasil" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSoTIiP4yTYcDrgOv_mK1C3zcp--7HVYcDqz8Jwug=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",TV Brasil
 pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/tvbrasil"
