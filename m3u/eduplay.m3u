@@ -13,7 +13,3 @@ pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/u
 pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/TVU"
 #EXTINF:-1 tvg-name="TV UFOP" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSyvUpbDBoSfntT0KGITIcWsz0_PiRT_syT1GbwRA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",TV UFOP
 pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/ufop"
-#EXTINF:-1 tvg-name="Unicamp Rádio" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSqAjE85OJpbGeorG4_O0FIsRpNAczd688u3UH56g=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",Unicamp Rádio
-pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/radio/radiounicamp"
-#EXTINF:-1 tvg-name="EBC" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLTIp4_srXU1Tut7zVeVRQDGCqRTa2yQkrti528AYw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",EBC
-pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/radio/EBC"
