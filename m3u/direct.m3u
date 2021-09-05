@@ -15,7 +15,5 @@ pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.
 pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=66.60.0.0' --default-stream 720p,best --url https://www.elnueve.com.ar/en-vivo/
 #EXTINF:-1 tvg-name="ARD Live (Germany)" tvg-language="German" tvg-country="DE" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjHzll_QGwjHbbBuALURQyRH2R7KY7JXRytN3Wi034=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",ARD Live (Germany)
 pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=5.9.0.0' --default-stream 720p,best --url https://live.daserste.de/
-#EXTINF:-1 tvg-name="ARTE TV (France)" tvg-language="French" tvg-country="FR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwng7yLO5dG3B6PZEeFnNls13mGbmTInHA-ygdP58=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",ARTE TV (France)
-pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=2.0.0.0' --default-stream 720p,best --url https://www.arte.tv/fr/direct/
 #EXTINF:-1 tvg-name="Olympics TV (English)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRCFpu_biul8hGuPLuvU8l63Qmz4JLa0u8Pq_HarC0=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Sports",Olympics TV (English)
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://olympics.com/en/live/
