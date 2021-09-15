@@ -69,7 +69,8 @@ streamlink_update () {
     if pip3 install --no-cache --upgrade streamlink; then
       message "Streamlink version: $(streamlink --version)." 'info'
     else
-      message 'Streamlink update failed!' 'error'
+      message "Streamlink update failed! Current version is still $(streamlink --version)." 'error'
+      end 'There was an error while trying to update streamlink.' 1
     fi
   fi
 }
