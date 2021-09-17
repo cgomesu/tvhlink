@@ -66,6 +66,11 @@ check_streamlink () {
 streamlink_update () {
   if [ -z "$(command -v pip3)" ]; then end 'Unusual behavior: pip3 should be installed but is not.' 1;
   else
+    # upgrade setuptools and pip first
+    if ! pip3 install --no-cache-dir --upgrade setuptools pip; then
+      message 'PIP3: Error while upgrading setuptools and pip.' 'error'
+    fi
+    # upgrade streamlink last and exit on error
     if pip3 install --no-cache-dir --upgrade streamlink; then
       message "Streamlink version: $(streamlink --version)." 'info'
     else
@@ -81,7 +86,7 @@ streamlink_install () {
     message 'APK: Installing required packages.' 'info'
     if apk add --no-cache py3-pip && apk add --no-cache --virtual .build-deps gcc musl-dev; then
         message 'PIP3: Updating and installing required packages.' 'info'
-        if ! pip3 install --no-cache-dir --upgrade setuptools; then message 'PIP3: Error while upgrading setuptools.' 'error'; fi
+        if ! pip3 install --no-cache-dir --upgrade setuptools pip; then message 'PIP3: Error while upgrading setuptools and pip.' 'error'; fi
         ## install the last compatible version of streamlink (2.3.0)
         ## reference to build issues with streamlink 2.4.0 in Alpine
         if ! pip3 install --no-cache-dir streamlink==2.3.0; then message 'PIP3: Error while installing Streamlink.' 'error' ; fi
