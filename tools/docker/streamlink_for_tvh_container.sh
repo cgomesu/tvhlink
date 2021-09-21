@@ -94,7 +94,7 @@ streamlink_install () {
       end 'APK: Critical error. Unable install required packages.' 1
     fi
     message 'APK: Removing packages no longer required.' 'info'
-    apk del .build-deps gcc musl-dev
+    apk del .build-deps
   else
     end 'APK: Critical error. Unable to update pkg list. Check connectivity.' 1
   fi
