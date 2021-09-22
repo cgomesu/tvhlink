@@ -32,7 +32,7 @@
 # takes msg ($1) and status ($2) as args
 end () {
   echo '*********************************************'
-  echo '* Finished Streamlink install/update script *'
+  echo '* Finished Streamlink install/update script'
   echo "* Message: $1"
   echo '*********************************************'
   exit "$2"
@@ -75,7 +75,7 @@ streamlink_update () {
     fi
     # ensure lxml is installed. for more info, refer to https://github.com/cgomesu/tvhlink/issues/6
     if ! check_py_lxml; then
-      if ! apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/v3.13/community "py3-lxml>4.6.2"; then
+      if ! apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/v3.13/community "py3-lxml>4.6.3"; then
         end 'APK: Critical error. Unable to install compatible lxml.' 1
       fi
     fi 
@@ -91,7 +91,7 @@ streamlink_install () {
   if apk update; then
     message 'APK and PIP3: Installing required packages.' 'info'
     # install lxml from apk instead of pip: https://github.com/cgomesu/tvhlink/issues/6
-    if ! apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/v3.13/community py3-pip "py3-lxml>4.6.2"; then
+    if ! apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/v3.13/community py3-pip "py3-lxml>4.6.3"; then
       end 'APK: Critical error. Unable to install pip3 or lxml.' 1
     fi
     # upgrade setuptools and pip before streamlink installation
@@ -134,4 +134,4 @@ else
 fi
 
 message "Streamlink version: $(streamlink --version)." 'info'
-end 'Finished install/update script without errors.' 0
+end 'Reached EOF without critical errors.' 0
