@@ -1,15 +1,17 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="TV Brasil" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSoTIiP4yTYcDrgOv_mK1C3zcp--7HVYcDqz8Jwug=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",TV Brasil
-pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/tvbrasil"
+pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/tvbrasil" "https://eduplay.rnp.br/portal/tv/vozdobrasil"
+#EXTINF:-1 tvg-name="Voz do Brasil" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSoTIiP4yTYcDrgOv_mK1C3zcp--7HVYcDqz8Jwug=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",Voz do Brasil
+pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/vozdobrasil" "https://eduplay.rnp.br/portal/tv/tvbrasil"
 #EXTINF:-1 tvg-name="Canal Saúde" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLS3imlao6AsQ254afEnsAmO3113i9X4x71P9AS5tw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",Canal Saúde
 pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/saude" "https://eduplay.rnp.br/portal/tv/tvbrasil"
 #EXTINF:-1 tvg-name="TV Escola" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSBpqoYRQaFRoS-frAFwd7y_h6mpiJwnjBQ4OdhwA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",TV Escola
 pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/tvescola" "https://eduplay.rnp.br/portal/tv/tvbrasil"
 #EXTINF:-1 tvg-name="UnBTV" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRTtlHF57R0Xmaf-zcV9gZ-83S5p-xhH-_Ru2Vx3w=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",UnBTV
-pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/unb-tv"
+pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/unb-tv" "https://eduplay.rnp.br/portal/tv/tvbrasil"
 #EXTINF:-1 tvg-name="UPFTV" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLR05T9UX9WpnMURB0m0O5-3LqxmF68RhnrkQ3FGNA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",UPFTV
-pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/upftv"
+pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/upftv" "https://eduplay.rnp.br/portal/tv/tvbrasil"
 #EXTINF:-1 tvg-name="TVU" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLQ4-_Myg2hJzRufQJw1FV67Uau-XbrSTbJlUwNUtA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",TVU
-pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/TVU"
+pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/TVU" "https://eduplay.rnp.br/portal/tv/tvbrasil"
 #EXTINF:-1 tvg-name="TV UFOP" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSyvUpbDBoSfntT0KGITIcWsz0_PiRT_syT1GbwRA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",TV UFOP
-pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/ufop"
+pipe:///usr/bin/env /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/ufop" "https://eduplay.rnp.br/portal/tv/tvbrasil"
