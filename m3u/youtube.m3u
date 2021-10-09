@@ -67,8 +67,6 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/NASAtelevision/live
 #EXTINF:-1 tvg-name="Space Videos" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhJwS4dNhDO2CZEBpbWelJ6U9YfovHTZM3PiKpy2Q=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Space",Space Videos
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/ouramazingspace/live
-#EXTINF:-1 tvg-name="Space and the Universe HD" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwniQ-SOmDhoXaEcn6ClWeuoknbbKatk6kFk6pVPWlg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Space",Space and the Universe HD
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UC9pYOJPB5UYlMlGKKZWo-Bw/live
 #EXTINF:-1 tvg-name="CosmoSapiens" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhtjiQ8qJtNDcF9pumlod9ziXH5o0WaC2zRrH9Ekg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Space",CosmoSapiens
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UC3ZODI-xZfdPanPP6tKUg9g/live
 #EXTINF:-1 tvg-name="RailWay" tvg-language="English" tvg-country="NO" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhXasbVGZU0HgNdEG6LtPmR032TPmwrDsZR6taGrg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",RailWay
