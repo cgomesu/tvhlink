@@ -35,6 +35,10 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/channelnewsasia/live
 #EXTINF:-1 tvg-name="Bloomberg Quicktake" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjJhcfrMRa_dkDQlhadE340LoYbMDQIcAy7dV-JGSE=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",Bloomberg Global News
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCUMZ7gohGI9HcU9VNsr2FJQ/live
+#EXTINF:-1 tvg-name="WION" tvg-language="English" tvg-country="IN" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSMXIbWYCEgQ5UggI8GY-DgXdKGK5Eql70Tc9Eefw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",WION
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UC_gUM8rL-Lrg6O3adPW9K1g/live
+#EXTINF:-1 tvg-name="TRT World" tvg-language="English" tvg-country="TR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLS6F38gUVFlgqPibPvR34XXRpDMfoGSUzDM2n1tuGo=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",TRT World
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UC7fWeaHhqgM4Ry-RMpM2YYw/live
 #EXTINF:-1 tvg-name="earthTV" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnimEfH-t9YsO-FdLONV7UqSjRiqHm9VqMU_Vc1LuA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",earthTV
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/earthTV/live
 #EXTINF:-1 tvg-name="I Love You Venice" tvg-language="English" tvg-country="IT" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnh5va_l2Wwx15RAXvlDjdlFZfAM3DPYUykuH8bc=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",I Love You Venice
@@ -69,6 +73,8 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/ouramazingspace/live
 #EXTINF:-1 tvg-name="CosmoSapiens" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhtjiQ8qJtNDcF9pumlod9ziXH5o0WaC2zRrH9Ekg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Space",CosmoSapiens
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UC3ZODI-xZfdPanPP6tKUg9g/live
+#EXTINF:-1 tvg-name="Factnomenal" tvg-logo="https://yt3.ggpht.com/2BL8HCZqU6z4YkbSoYk2DspfJU9BGxNPMvvEm8lUFfugee-VR6A-0pCiu8SwOYUttOmlY3mU4Q=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Space",Factnomenal
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/c/Factnomenal/live
 #EXTINF:-1 tvg-name="RailWay" tvg-language="English" tvg-country="NO" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhXasbVGZU0HgNdEG6LtPmR032TPmwrDsZR6taGrg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",RailWay
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCP8wWzfUcral_E6iNMdIdKg/live
 #EXTINF:-1 tvg-name="RailCowGirl" tvg-language="English" tvg-country="NO" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnguI_MUV_1s_effDYdOeL-2l9dfCxl3NSM7KAoiyw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",RailCowGirl
@@ -87,6 +93,8 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/cafemusicbgmchannel/live
 #EXTINF:-1 tvg-name="Jazz & Bossa Collection" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjEgkeJOVLK4IR6deOQedYYTtT3IkkDPBer2M9y=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Jazz and Bossa Collection
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCqKLOX-B7H9djovoTzj-Wdg/live
+#EXTINF:-1 tvg-name="LoFi Girl" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRBxyT5Y9xKYWPmnShA_utGUvcJnxWaFmc0CtWTkg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",LoFi Girl
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/c/LofiGirl/live
 #EXTINF:-1 tvg-name="Melotown" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSSZEZMvHDpA1NWdwFQzyX0UYX5fenXodeEgQSFcQ=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",Melotown
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UCKKePR9Fx8JQb0AVh4Qf6Jg/live
 #EXTINF:-1 tvg-name="Cafe del Mar" tvg-language="English" tvg-country="ES" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhopfwwc4cdopyicbV4yQB3QjhX69ytKkY0IDFguQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Cafe del Mar
