@@ -87,6 +87,8 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCDtp5WqyK_HBbKeT0WR0bxw/live
 #EXTINF:-1 tvg-name="CaSeismograph" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhyQp0PdRax8E-U08aw55USD0C1dYUE-w6GdbOJhg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Data",CaSeismograph
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCBsPEHBugPQbNzX6fbQBHgw/live
+#EXTINF:-1 tvg-name="Soothing Relaxation" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRwAV9Krb527QrhWRaeK0nzoiIVkLcRSqlu8qLCHg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Soothing Relaxation
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UCjzHeG1KWoonmf9d5KBvSiw/live
 #EXTINF:-1 tvg-name="BGM channel" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnge4YmlDkuJK2x-e6jBYHUtfyYrdA7w4PddriPa=s800-c-k-c0xffffffff-no-rj-mo" group-title="Radio",BGM channel
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/bgmchannelbgm/live
 #EXTINF:-1 tvg-name="BGM channel - Cafe Music" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhXCUAyiCY_F25FSahanhaaIUI8ye_nLxw3mI8k3Q=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Cafe Music BGM channel
@@ -95,6 +97,8 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCqKLOX-B7H9djovoTzj-Wdg/live
 #EXTINF:-1 tvg-name="LoFi Girl" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRBxyT5Y9xKYWPmnShA_utGUvcJnxWaFmc0CtWTkg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",LoFi Girl
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/c/LofiGirl/live
+#EXTINF:-1 tvg-name="Timeless Tracks" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLTj_u_zCZAd2OsCeS3to0no00-yON4GFeUhfPhW-w=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Timeless Tracks
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/user/feelmytastemusic/live
 #EXTINF:-1 tvg-name="Melotown" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSSZEZMvHDpA1NWdwFQzyX0UYX5fenXodeEgQSFcQ=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",Melotown
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UCKKePR9Fx8JQb0AVh4Qf6Jg/live
 #EXTINF:-1 tvg-name="Cafe del Mar" tvg-language="English" tvg-country="ES" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhopfwwc4cdopyicbV4yQB3QjhX69ytKkY0IDFguQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Cafe del Mar
