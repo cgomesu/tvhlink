@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 #########################################################################################
-# Script to install and update Streamlink on the TVHeadend LinuxServer docker container #
+# Script to install and upgrade Streamlink on the TVHeadend LinuxServer docker container #
 #########################################################################################
 # How-To:
 #  1. Copy 'streamlink_for_tvh_container.sh' to /config/custom-cont-init.d
@@ -12,7 +12,9 @@
 #########################################################################################
 # Notes
 #  - LinuxServer image comes with Python3 and the community repo source enabled
-#  - Streamlink 2.4.0 introduces lxml>=4.6.3 requirement
+#  - Streamlink 3.0.0 introduces lxml>=4.6.4 and <5.0 requirement
+#  - Streamlink 3.0.0 introduces pycountry and pycrypto dependencies
+#  - (Outdated.) Streamlink 2.4.0 introduces lxml>=4.6.3 requirement
 #  - Keep this script POSIX sh compliant for compatibility
 #  - Use shellcheck
 #########################################################################################
@@ -21,20 +23,28 @@
 # Base image URL target:
 #  ghcr.io/linuxserver/tvheadend
 #
-# Script installs and updates the pkg:
-#  pip3, setuptools, streamlink
+# Script installs or upgrades the following pkg:
+#  python3, python3-dev, pip, setuptools, streamlink
 #
 # Tested images (tvheadend:latest):
-#  arm:
-#   @sha256:93283bf7f45fc04b74e4c4148b93baac4a07cd0e4a58a0a512b338d9fd5af11e
+#  arm64:
+#   sha256:67821caa037da9d4fe68e83023a50518589193dfcd6fd3e1da0f23408ea9a139
+#  amd64:
+#   sha256:f77bfaf3a8440f3eeb6af418edd887676a6b27e21b53e1fde259e9b59201b28b
 #########################################################################################
+
+# apk variables
+APK_BRANCH='edge'
+APK_MAIN="http://dl-cdn.alpinelinux.org/alpine/${APK_BRANCH:-edge}/main"
+APK_COMMUNITY="http://dl-cdn.alpinelinux.org/alpine/${APK_BRANCH:-edge}/community"
+APK_PY3_LXML='4.6.4'
 
 # takes msg ($1) and status ($2) as args
 end () {
-  echo '*********************************************'
-  echo '* Finished Streamlink install/update script'
+  echo '***********************************************'
+  echo '* Finished Streamlink install/upgrade script'
   echo "* Message: $1"
-  echo '*********************************************'
+  echo '***********************************************'
   exit "$2"
 }
 
@@ -44,77 +54,78 @@ message () {
 }
 
 start () {
-  echo '**********************************************'
-  echo '****** Streamlink install/update script ******'
-  echo '**********************************************'
+  echo '***********************************************'
+  echo '****** Streamlink install/upgrade script ******'
+  echo '***********************************************'
   echo 'Author: cgomesu'
   echo 'Repo: https://github.com/cgomesu/tvhlink'
-  echo '**********************************************'
+  echo '***********************************************'
 }
 
-# checks return error (1) if requirements are not met
+#takes an apk pkg ($1) and operator (=<>) ($2) as argument
+check_apk_pkg_version () {
+  if apk version --no-cache -X "$APK_MAIN" -X "$APK_COMMUNITY" "$1" | grep "$2" > /dev/null 2>&1; then return 0; else return 1; fi
+}
+
+#takes a python3 pkg as argument ($1)
+check_py3_pkg_exist () {
+  if python3 -c "import $1" > /dev/null 2>&1; then return 0; else return 1; fi
+}
+
+# checks user is root
 check_root () {
-  if [ "$(id -u)" -ne 0 ]; then return 1; else return 0; fi
+  if [ "$(id -u)" -eq 0 ]; then return 0; else return 1; fi
 }
 
-check_streamlink () {
-  if [ -z "$(command -v streamlink)" ]; then return 1; else return 0; fi
+python3_upgrade () {
+  message "APK: Installing packages from the $APK_BRANCH branch." 'info'
+  if ! apk add --upgrade --no-cache -X "$APK_MAIN" -X "$APK_COMMUNITY" python3 py3-pip "py3-lxml>$APK_PY3_LXML"; then
+    end "APK: Critical error. Unable to upgrade or install Python3 and related packages from Alpine's $APK_BRANCH branch." 1
+  fi
 }
 
-check_py_lxml () {
-  if ! python3 -c 'import lxml' > /dev/null 2>&1; then return 1; else return 0; fi
-}
+streamlink_install () {
+  message 'APK and PIP3: Installing required packages.' 'info'
+  # install temporary build dependencies in .build-deps from default /etc/apk/repositories
+  # this is required for building a few of the streamlink dependencies
+  if ! apk add --no-cache --virtual .build-deps gcc musl-dev; then
+    end 'APK: Critical error. Unable install required packages.' 1
+  fi
 
-streamlink_update () {
-  if [ -z "$(command -v pip3)" ]; then
-    end 'PIP3: Critical error. pip3 should be installed but is not.' 1
-  else
-    # upgrade setuptools and pip first
-    if ! pip3 install --no-cache-dir --upgrade setuptools pip; then
+  if check_py3_pkg_exist pip; then
+    # upgrade setuptools and pip before streamlink installation
+    if ! pip3 install --no-cache-dir -U setuptools pip; then 
       message 'PIP3: Error while upgrading setuptools and pip.' 'error'
     fi
-    # ensure lxml is installed. for more info, refer to https://github.com/cgomesu/tvhlink/issues/6
-    if ! check_py_lxml; then
-      if ! apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/v3.13/community "py3-lxml>4.6.3"; then
-        end 'APK: Critical error. Unable to install compatible lxml.' 1
-      fi
+    # after upgrade, let pip3 try to install streamlink until it succeed
+    message 'PIP3: Installing Streamlink.' 'info'
+    pip3 install --no-cache-dir streamlink
+  else
+    message 'PIP3: Critical error. pip3 should be installed but is not.' 'error'
+  fi
+
+  # cleanup for temporary apk build dependencies
+  message 'APK: Removing packages no longer required.' 'info'
+  apk del .build-deps
+
+  # check that script succeeded to install streamlink or raise critical error
+  if ! check_py3_pkg_exist streamlink; then
+    end 'PIP3: Critical error. Cannot find Streamlink. Check above for installation errors.' 1
+  fi
+}
+
+streamlink_upgrade () {
+  if check_py3_pkg_exist pip; then
+    # upgrade setuptools and pip first
+    if ! pip3 install --no-cache-dir -U setuptools pip; then
+      message 'PIP3: Error while upgrading setuptools and pip.' 'error'
     fi 
     # upgrade streamlink last and exit on error
     if ! pip3 install --no-cache-dir -U streamlink; then
       end "PIP3: Critical error. Unable to upgrade Streamlink. Current version is still $(streamlink --version)." 1
     fi
-  fi
-}
-
-streamlink_install () {
-  message 'APK: Updating pkg list.' 'info'
-  if apk update; then
-    message 'APK and PIP3: Installing required packages.' 'info'
-    # install lxml from apk instead of pip: https://github.com/cgomesu/tvhlink/issues/6
-    if ! apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/v3.13/community py3-pip "py3-lxml>4.6.3"; then
-      end 'APK: Critical error. Unable to install pip3 or lxml.' 1
-    fi
-    # upgrade setuptools and pip before streamlink installation
-    if ! pip3 install --no-cache-dir -U setuptools pip; then 
-      message 'PIP3: Error while upgrading setuptools and pip.' 'error'
-    fi
-    # install temporary build dependencies in .build-deps
-    # required for building a few of the streamlink dependencies (e.g., pycryptodome)
-    if ! apk add --no-cache --virtual .build-deps gcc musl-dev; then
-        end 'APK: Critical error. Unable install required packages.' 1
-    fi
-    # let pip3 try to install until it succeed to install a version of streamlink
-    message 'PIP3: Installing Streamlink.' 'info'
-    pip3 install --no-cache-dir streamlink
-    # cleanup
-    message 'APK: Removing packages no longer required.' 'info'
-    apk del .build-deps
   else
-    end 'APK: Critical error. Unable to update pkg list. Check connectivity.' 1
-  fi
-  # check that pip3 succeeded to install streamlink or raise critical error
-  if ! check_streamlink; then
-    end 'PIP3: Critical error. Cannot find Streamlink. Check above for installation errors.' 1
+    end 'PIP3: Critical error. pip3 should be installed but is not.' 1
   fi
 }
 
@@ -127,8 +138,14 @@ trap "end 'Received a signal to stop' 1" INT HUP TERM
 
 if ! check_root; then end 'User is not root. This script needs root permission.' 1; fi
 
-if check_streamlink; then
-  message 'Updating Streamlink...' 'info'; streamlink_update
+# upgrade to the latest available Python3 version and related APK packages
+# see https://github.com/cgomesu/tvhlink/issues/10
+if check_apk_pkg_version python3 '<'; then
+  message 'Upgrading Python3...' 'info'; python3_upgrade
+fi
+
+if check_py3_pkg_exist streamlink; then
+  message 'Upgrading Streamlink...' 'info'; streamlink_upgrade
 else
   message 'Installing Streamlink...' 'info'; streamlink_install
 fi
