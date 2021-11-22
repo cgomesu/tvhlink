@@ -7,8 +7,10 @@ pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https:/
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www3.nhk.or.jp/nhkworld/en/live/
 #EXTINF:-1 tvg-name="Olympics TV (INT)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRCFpu_biul8hGuPLuvU8l63Qmz4JLa0u8Pq_HarC0=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Sports",Olympics TV (INT)
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://olympics.com/en/live/
+#EXTINF:-1 tvg-name="Rede Bandeirantes (BR)" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSs64n1bVZEs1PUiur0g-R1AFlbg8VPGDkqV0AVzw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Enterainment",Rede Bandeirantes (BR)
+pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.dailymotion.com/video/kGk7f7l2OqdLYRxaX2y
 #EXTINF:-1 tvg-name="TV Gazeta (BR)" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLTVx7PvNNV7r00DNdZ-QcKCHDdmHhfpQb1tkn5zYw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Enterainment",TV Gazeta (BR)
-pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://livestream.com/accounts/5381476/events/8947634/player
+pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://livestream.com/accounts/5381476/events/8947634/player
 #EXTINF:-1 tvg-name="TVI 24 (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLS4joitKi2mhVYiU6H_hWRRKJ0pMxlitHQNedVXJg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Enterainment",TVI 24 (PT)
 pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://tviplayer.iol.pt/direto/TVI24
 #EXTINF:-1 tvg-name="RTP 1 (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngDrUzb6uacGFiIj7TqoD74MGQ0cU4ytKeIJHftKw=s176-c-k-c0x00ffffff-no-rj" group-title="Enterainment",RTP 1 (PT)
