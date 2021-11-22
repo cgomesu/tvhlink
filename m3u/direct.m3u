@@ -5,6 +5,10 @@ pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https:/
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/cbs-sports-hq/
 #EXTINF:-1 tvg-name="NHK Worl-Japan (JP)" tvg-language="English" tvg-country="JP" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLQ9ItuDialCNXYh2ue_wnjMND6mh3JIWPLfDprFZw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",NHK World-Japan (JP)
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www3.nhk.or.jp/nhkworld/en/live/
+#EXTINF:-1 tvg-name="Olympics TV (INT)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRCFpu_biul8hGuPLuvU8l63Qmz4JLa0u8Pq_HarC0=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Sports",Olympics TV (INT)
+pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://olympics.com/en/live/
+#EXTINF:-1 tvg-name="TV Gazeta (BR)" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLTVx7PvNNV7r00DNdZ-QcKCHDdmHhfpQb1tkn5zYw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Enterainment",TV Gazeta (BR)
+pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://livestream.com/accounts/5381476/events/8947634/player
 #EXTINF:-1 tvg-name="TVI 24 (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLS4joitKi2mhVYiU6H_hWRRKJ0pMxlitHQNedVXJg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Enterainment",TVI 24 (PT)
 pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://tviplayer.iol.pt/direto/TVI24
 #EXTINF:-1 tvg-name="RTP 1 (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngDrUzb6uacGFiIj7TqoD74MGQ0cU4ytKeIJHftKw=s176-c-k-c0x00ffffff-no-rj" group-title="Enterainment",RTP 1 (PT)
@@ -13,9 +17,7 @@ pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.
 pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.rtp.pt/play/direto/rtp2
 #EXTINF:-1 tvg-name="RTP 3 (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngDrUzb6uacGFiIj7TqoD74MGQ0cU4ytKeIJHftKw=s176-c-k-c0x00ffffff-no-rj" group-title="Enterainment",RTP 3 (PT)
 pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.rtp.pt/play/direto/rtp3
-#EXTINF:-1 tvg-name="El Nueve (Argentina)" tvg-language="Spanish" tvg-country="AR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngVIFS-_5r2YEBqHco9xA6nwEy--9BniYispdZK=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",El Nueve (Argentina)
+#EXTINF:-1 tvg-name="El Nueve (AR)" tvg-language="Spanish" tvg-country="AR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngVIFS-_5r2YEBqHco9xA6nwEy--9BniYispdZK=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",El Nueve (AR)
 pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=66.60.0.0' --default-stream 720p,best --url https://www.elnueve.com.ar/en-vivo/
-#EXTINF:-1 tvg-name="ARD Live (Germany)" tvg-language="German" tvg-country="DE" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjHzll_QGwjHbbBuALURQyRH2R7KY7JXRytN3Wi034=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",ARD Live (Germany)
+#EXTINF:-1 tvg-name="ARD Live (DE)" tvg-language="German" tvg-country="DE" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjHzll_QGwjHbbBuALURQyRH2R7KY7JXRytN3Wi034=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",ARD Live (DE)
 pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=5.9.0.0' --default-stream 720p,best --url https://live.daserste.de/
-#EXTINF:-1 tvg-name="Olympics TV (English)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRCFpu_biul8hGuPLuvU8l63Qmz4JLa0u8Pq_HarC0=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Sports",Olympics TV (English)
-pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://olympics.com/en/live/
