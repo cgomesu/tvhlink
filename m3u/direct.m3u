@@ -20,8 +20,8 @@ pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.
 #EXTINF:-1 tvg-name="RTP 3 (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngDrUzb6uacGFiIj7TqoD74MGQ0cU4ytKeIJHftKw=s176-c-k-c0x00ffffff-no-rj" group-title="Enterainment",RTP 3 (PT)
 pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.rtp.pt/play/direto/rtp3
 #EXTINF:-1 tvg-name="RedTeleSistema (EC)" tvg-language="Spanish" tvg-country="EC" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLQGEMLawH2kyslEu0l43k9gmirRIwrYIKIlpFk8CA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",RedTeleSistema (EC)
-pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.rts.com.ec/envivo/
+pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=170.238.170.10' --default-stream best --url https://www.rts.com.ec/envivo/
 #EXTINF:-1 tvg-name="TeleViCentro (EC)" tvg-language="Spanish" tvg-country="EC" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRxsc0nIiwpGty2bUbLqlbKHIw0q-V5NL2XPww=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",TeleViCentro (EC)
-pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.tvc.com.ec/envivo/
+pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=170.238.170.10' --default-stream best --url https://www.tvc.com.ec/envivo/
 #EXTINF:-1 tvg-name="ARD Live (DE)" tvg-language="German" tvg-country="DE" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjHzll_QGwjHbbBuALURQyRH2R7KY7JXRytN3Wi034=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",ARD Live (DE)
 pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=5.9.0.0' --default-stream 720p,best --url https://live.daserste.de/
