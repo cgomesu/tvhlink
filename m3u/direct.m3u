@@ -1,23 +1,11 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="CBS News (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjvQz8v5yU3aNJ9YPLkCC9DejFuobFpZ4Pmn1z6=s176-c-k-c0x00ffffff-no-rj" group-title="News",CBS News (US)
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/
-#EXTINF:-1 tvg-name="CBS News Sports (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjvQz8v5yU3aNJ9YPLkCC9DejFuobFpZ4Pmn1z6=s176-c-k-c0x00ffffff-no-rj" group-title="Sports",CBS News Sports (US)
-pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/cbs-sports-hq/
-#EXTINF:-1 tvg-name="NBC News Now (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLTDMl8E5vFyjCn-hOnyz_zKzsSDPf7Y5owkIPxrrdI=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",NBC News Now (US)
-pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.nbcnews.com/now
 #EXTINF:-1 tvg-name="NHK Worl-Japan (JP)" tvg-language="English" tvg-country="JP" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLQ9ItuDialCNXYh2ue_wnjMND6mh3JIWPLfDprFZw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",NHK World-Japan (JP)
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www3.nhk.or.jp/nhkworld/en/live/
-#EXTINF:-1 tvg-name="Olympics TV (INT)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRCFpu_biul8hGuPLuvU8l63Qmz4JLa0u8Pq_HarC0=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Sports",Olympics TV (INT)
-pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://olympics.com/en/live/
 #EXTINF:-1 tvg-name="Rede Bandeirantes (BR)" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSs64n1bVZEs1PUiur0g-R1AFlbg8VPGDkqV0AVzw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",Rede Bandeirantes (BR)
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.dailymotion.com/video/kGk7f7l2OqdLYRxaX2y
 #EXTINF:-1 tvg-name="CNN Portugal (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLR83pYhPHglVE3E0OulUW1VwsQ94mXIzRjniiukRg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",CNN Portugal (PT)
 pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://tviplayer.iol.pt/direto/CNN
-#EXTINF:-1 tvg-name="RTP 1 (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngDrUzb6uacGFiIj7TqoD74MGQ0cU4ytKeIJHftKw=s176-c-k-c0x00ffffff-no-rj" group-title="Entertainment",RTP 1 (PT)
-pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.rtp.pt/play/direto/rtp1
-#EXTINF:-1 tvg-name="RTP 2 (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngDrUzb6uacGFiIj7TqoD74MGQ0cU4ytKeIJHftKw=s176-c-k-c0x00ffffff-no-rj" group-title="Entertainment",RTP 2 (PT)
-pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.rtp.pt/play/direto/rtp2
-#EXTINF:-1 tvg-name="RTP 3 (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngDrUzb6uacGFiIj7TqoD74MGQ0cU4ytKeIJHftKw=s176-c-k-c0x00ffffff-no-rj" group-title="Entertainment",RTP 3 (PT)
-pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.rtp.pt/play/direto/rtp3
 #EXTINF:-1 tvg-name="ARD Live (DE)" tvg-language="German" tvg-country="DE" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjHzll_QGwjHbbBuALURQyRH2R7KY7JXRytN3Wi034=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",ARD Live (DE)
 pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=5.9.0.0' --default-stream 720p,best --url https://live.daserste.de/
