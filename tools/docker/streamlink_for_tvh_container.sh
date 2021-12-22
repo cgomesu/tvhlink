@@ -11,10 +11,10 @@
 # Repo: https://github.com/cgomesu/tvhlink
 #########################################################################################
 # Notes
+#  - Python 3.10.1 (edge branch) changes Python pkg directory
 #  - LinuxServer image comes with Python3 and the community repo source enabled
 #  - Streamlink 3.0.0 introduces lxml>=4.6.4 and <5.0 requirement
 #  - Streamlink 3.0.0 introduces pycountry and pycrypto dependencies
-#  - (Outdated.) Streamlink 2.4.0 introduces lxml>=4.6.3 requirement
 #  - Keep this script POSIX sh compliant for compatibility
 #  - Use shellcheck
 #########################################################################################
@@ -60,11 +60,6 @@ start () {
   echo 'Author: cgomesu'
   echo 'Repo: https://github.com/cgomesu/tvhlink'
   echo '***********************************************'
-}
-
-#takes an apk pkg ($1) and operator (=<>) ($2) as argument
-check_apk_pkg_version () {
-  if apk version --no-cache -X "$APK_MAIN" -X "$APK_COMMUNITY" "$1" | grep "$2" > /dev/null 2>&1; then return 0; else return 1; fi
 }
 
 #takes a python3 pkg as argument ($1)
@@ -140,9 +135,8 @@ if ! check_root; then end 'User is not root. This script needs root permission.'
 
 # upgrade to the latest available Python3 version and related APK packages
 # see https://github.com/cgomesu/tvhlink/issues/10
-if check_apk_pkg_version python3 '<'; then
-  message 'Upgrading Python3...' 'info'; python3_upgrade
-fi
+# see https://github.com/cgomesu/tvhlink/issues/12
+message 'Upgrading Python3...' 'info'; python3_upgrade
 
 if check_py3_pkg_exist streamlink; then
   message 'Upgrading Streamlink...' 'info'; streamlink_upgrade
