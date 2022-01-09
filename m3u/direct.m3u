@@ -5,5 +5,3 @@ pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https:/
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www3.nhk.or.jp/nhkworld/en/live/
 #EXTINF:-1 tvg-name="CNN Portugal (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLR83pYhPHglVE3E0OulUW1VwsQ94mXIzRjniiukRg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",CNN Portugal (PT)
 pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://tviplayer.iol.pt/direto/CNN
-#EXTINF:-1 tvg-name="ARD Live (DE)" tvg-language="German" tvg-country="DE" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjHzll_QGwjHbbBuALURQyRH2R7KY7JXRytN3Wi034=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",ARD Live (DE)
-pipe:///usr/bin/env streamlink --stdout --http-header 'X-Forwarded-For=5.9.0.0' --default-stream 720p,best --url https://live.daserste.de/
