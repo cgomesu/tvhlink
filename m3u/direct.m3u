@@ -3,8 +3,6 @@
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/
 #EXTINF:-1 tvg-name="NHK Worl-Japan (JP)" tvg-language="English" tvg-country="JP" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLQ9ItuDialCNXYh2ue_wnjMND6mh3JIWPLfDprFZw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",NHK World-Japan (JP)
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www3.nhk.or.jp/nhkworld/en/live/
-#EXTINF:-1 tvg-name="Rede Bandeirantes (BR)" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSs64n1bVZEs1PUiur0g-R1AFlbg8VPGDkqV0AVzw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",Rede Bandeirantes (BR)
-pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.dailymotion.com/video/kGk7f7l2OqdLYRxaX2y
 #EXTINF:-1 tvg-name="CNN Portugal (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLR83pYhPHglVE3E0OulUW1VwsQ94mXIzRjniiukRg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",CNN Portugal (PT)
 pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://tviplayer.iol.pt/direto/CNN
 #EXTINF:-1 tvg-name="ARD Live (DE)" tvg-language="German" tvg-country="DE" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjHzll_QGwjHbbBuALURQyRH2R7KY7JXRytN3Wi034=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",ARD Live (DE)
