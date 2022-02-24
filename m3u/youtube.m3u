@@ -85,8 +85,6 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCDGiCfCZIV5phsoGiPwIcyQ
 #EXTINF:-1 tvg-name="VolcanoVerse" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjEv_ZoYJ8J4X41Eu3U8H1mmkJdFOQHXXMoGMRi=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Data",VolcanoVerse
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCi3T_esus8Sr9I-3W5teVQQ
-#EXTINF:-1 tvg-name="Dynamic Earth Community" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwniMRTp8dx1gJC1GEThoPdsu_wERLuL5J_x_DOyC7A=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Data",Dynamic Earth Community
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCDtp5WqyK_HBbKeT0WR0bxw
 #EXTINF:-1 tvg-name="CaSeismograph" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhyQp0PdRax8E-U08aw55USD0C1dYUE-w6GdbOJhg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Data",CaSeismograph
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCBsPEHBugPQbNzX6fbQBHgw
 #EXTINF:-1 tvg-name="Soothing Relaxation" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRwAV9Krb527QrhWRaeK0nzoiIVkLcRSqlu8qLCHg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Soothing Relaxation
