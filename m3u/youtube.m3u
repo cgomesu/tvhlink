@@ -29,10 +29,6 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/Euronews
 #EXTINF:-1 tvg-name="Euronews Portuguese" tvg-language="Portuguese" tvg-country="FR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngxE0l-vGHBafT-fP7WfCq_Xo7QfDLATRspf0agKA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",Euronews Portuguese
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/euronewspt
-#EXTINF:-1 tvg-name="RT News" tvg-language="English" tvg-country="RU" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnijYqNxgVUKWqoGcecybqhx7rkYODHYyS0so06S4A=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",RT News
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/RussiaToday
-#EXTINF:-1 tvg-name="RT en Vivo" tvg-language="Spanish" tvg-country="RU" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSGmuv3Vu4E-LGg0gSA0c8y-FKrgQYiVNm9s9M5xg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",RT en Vivo
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UCEIhICHOQOonjE6V0SLdrHQ
 #EXTINF:-1 tvg-name="CNA" tvg-language="English" tvg-country="SG" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwniW9ewWFXD1epz9-LuzqlrpYtIyXy-A4I6VTl-E6g=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",CNA
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/channelnewsasia
 #EXTINF:-1 tvg-name="Bloomberg Quicktake" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjJhcfrMRa_dkDQlhadE340LoYbMDQIcAy7dV-JGSE=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",Bloomberg Global News
