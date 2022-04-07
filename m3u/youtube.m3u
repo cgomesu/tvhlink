@@ -17,6 +17,8 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/skynews
 #EXTINF:-1 tvg-name="Al Jazeera English" tvg-language="English" tvg-country="QA" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjQUqXvG-C_hEeRySPaaGMS1REtGd05a9RSLwIj7xc=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",Al Jazeera English
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/AlJazeeraEnglish
+#EXTINF:-1 tvg-name="Al Jazeera Balkans" tvg-language="Serbo-Croatian" tvg-country="BA" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLQzI3cLx-vjGPLNo3XCsDlOwxNC-NSxqb4H_ZC66g=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",Al Jazeera Balkans
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/c/ajbalkans
 #EXTINF:-1 tvg-name="France 24 English" tvg-language="English" tvg-country="FR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjQokqv8-b-XLH34XJulaY0W27AzlCmyeEY7TayMw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",France 24 English
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/france24english
 #EXTINF:-1 tvg-name="France 24" tvg-language="French" tvg-country="FR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngwSBIFO5UNdycjzkUjIRFEq0n5YWKTOgsfbgKdoQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",France 24
