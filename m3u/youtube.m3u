@@ -113,5 +113,3 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/TomorrowlandChannel
 #EXTINF:-1 tvg-name="EBSM" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRG41GN4FitBUYa_BwOPDmx53q7L961Il3i4oek5g=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",EBSM
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UCqeULMdbwF6GPONSjKFqT1Q
-#EXTINF:-1 tvg-name="Coachella" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLQJ6vD3gwGzchwnD-wXY7jqoQBKKzqEfifiBsuLfg=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",Coachella
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/c/Coachella
