@@ -1,8 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="Canal Saúde" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLS3imlao6AsQ254afEnsAmO3113i9X4x71P9AS5tw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",Canal Saúde
 pipe:///bin/sh /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/saude"
-#EXTINF:-1 tvg-name="TV Escola" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSBpqoYRQaFRoS-frAFwd7y_h6mpiJwnjBQ4OdhwA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",TV Escola
-pipe:///bin/sh /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/tvescola"
 #EXTINF:-1 tvg-name="UnBTV" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRTtlHF57R0Xmaf-zcV9gZ-83S5p-xhH-_Ru2Vx3w=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",UnBTV
 pipe:///bin/sh /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/unb-tv"
 #EXTINF:-1 tvg-name="UPFTV" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLR05T9UX9WpnMURB0m0O5-3LqxmF68RhnrkQ3FGNA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",UPFTV
