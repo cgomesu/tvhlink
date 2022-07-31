@@ -7,7 +7,7 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/LaNacionTV
 #EXTINF:-1 tvg-name="C5N" tvg-language="Spanish" tvg-country="AG" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngwPr7UlHCo57cDSnC48GispybmWzy2MjsoY9fqzQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",C5N
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/c5n
-#EXTINF:-1 tvg-name="Milenio" tvg-language="Spanish" tvg-country="MX" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngPO53Ea8a1PDAV3NHpv5OZXjx7v4PtT9sM_pjTxA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Entertainment",Milenio
+#EXTINF:-1 tvg-name="Milenio" tvg-language="Spanish" tvg-country="MX" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngPO53Ea8a1PDAV3NHpv5OZXjx7v4PtT9sM_pjTxA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Variety",Milenio
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/MILENIO
 #EXTINF:-1 tvg-name="ABC News" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjes9QiTK0Sv-6jI-TW-pjwqG4HhexOh2R3br0lrus=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",ABC News
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/ABCNews
