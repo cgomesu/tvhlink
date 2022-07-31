@@ -9,3 +9,5 @@ pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https:/
 pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.cmmedia.es/en-directo/tv/
 #EXTINF:-1 tvg-name="Sea Today (IN)" tvg-language="Indonesian" tvg-country="IN" tvg-logo="https://yt3.ggpht.com/oXiBfO5tOBHzrZjbvOR95KMmhHIpYRf3f4pWeQzBUT0RttYXtnqlJR3P_f_RXoxyVzZ0MA7_3uI=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Variety",Sea Today (IN)
 pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.useetv.com/livetv/seatoday
+#EXTINF:-1 tvg-name="Olympics TV (EN)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRCFpu_biul8hGuPLuvU8l63Qmz4JLa0u8Pq_HarC0=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Sports",Olympics TV (EN)
+pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://olympics.com/en/live/
