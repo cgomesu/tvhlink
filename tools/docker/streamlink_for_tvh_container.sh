@@ -1,23 +1,26 @@
 #!/usr/bin/env sh
 
-#########################################################################################
-# Script to install and upgrade Streamlink on the TVHeadend LinuxServer docker container #
-#########################################################################################
+###########################################################################################
+# Script to install and upgrade Streamlink on the TVHeadend LinuxServer.io docker container
+###########################################################################################
 # How-To:
-#  1. Copy 'streamlink_for_tvh_container.sh' to /config/custom-cont-init.d
+#  1. Copy 'streamlink_for_tvh_container.sh' to /custom-cont-init.d
+#     (see https://www.linuxserver.io/blog/2019-09-14-customizing-our-containers)
 #  2. Start/Restart the tvheadend container
-#########################################################################################
+###########################################################################################
 # Author: cgomesu
 # Repo: https://github.com/cgomesu/tvhlink
-#########################################################################################
+###########################################################################################
 # Notes
+#  - Linuxserver.io changed location of custom scripts dir from /config/custom-cont-init.d
+#    to /custom-cont-init.d
 #  - Python 3.10.1 (edge branch) changes Python pkg directory
 #  - LinuxServer image comes with Python3 and the community repo source enabled
 #  - Streamlink 3.0.0 introduces lxml>=4.6.4 and <5.0 requirement
 #  - Streamlink 3.0.0 introduces pycountry and pycrypto dependencies
 #  - Keep this script POSIX sh compliant for compatibility
 #  - Use shellcheck
-#########################################################################################
+###########################################################################################
 # Additional info
 #
 # Base image URL target:
@@ -28,10 +31,8 @@
 #
 # Tested images (tvheadend:latest):
 #  arm64:
-#   sha256:67821caa037da9d4fe68e83023a50518589193dfcd6fd3e1da0f23408ea9a139
-#  amd64:
-#   sha256:f77bfaf3a8440f3eeb6af418edd887676a6b27e21b53e1fde259e9b59201b28b
-#########################################################################################
+#   sha256:f14ee2a6c645286078c755a16a055f93860ceeb65d5e3f54ab61168e6b70b20b
+###########################################################################################
 
 # apk variables
 APK_BRANCH='edge'
