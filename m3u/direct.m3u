@@ -5,7 +5,5 @@ pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https:/
 pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://tviplayer.iol.pt/direto/CNN
 #EXTINF:-1 tvg-name="NHK Worl-Japan (JP)" tvg-language="English" tvg-country="JP" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLQ9ItuDialCNXYh2ue_wnjMND6mh3JIWPLfDprFZw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Variety",NHK World-Japan (JP)
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www3.nhk.or.jp/nhkworld/en/live/
-#EXTINF:-1 tvg-name="Castilla-La Mancha Media (ES)" tvg-language="Spanish" tvg-country="ES" tvg-logo="https://yt3.ggpht.com/rrD1WeWBpJqowxFZ-dMPESieonbuGSkfy2m0DxyAD5eX2-XUG2965ZcGDg7nT-bYdZZqNrOsHA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Variety",Castilla-La Mancha Media (ES)
-pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://www.cmmedia.es/en-directo/tv/
 #EXTINF:-1 tvg-name="Olympics TV (EN)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRCFpu_biul8hGuPLuvU8l63Qmz4JLa0u8Pq_HarC0=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Sports",Olympics TV (EN)
 pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://olympics.com/en/live/
