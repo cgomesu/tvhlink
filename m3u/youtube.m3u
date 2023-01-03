@@ -1,8 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="Record News" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhi8PrSURYvL7Eut-qfmAoi6pNshbFq7boraWAC=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",Record News
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCuiLR4p6wQ3xLEm15pEn1Xw
-#EXTINF:-1 tvg-name="Todo Noticia" tvg-language="Spanish" tvg-country="AG" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnivYh0RAgrZ_jPXal8LvI_UToIUfaEXaB7kX1_F-A=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",Todo Noticia
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCj6PcyLvpnIRT_2W_mwa9Aw
 #EXTINF:-1 tvg-name="La Nacion Plus" tvg-language="Spanish" tvg-country="AG" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngpawpDv4K72m-235zVdLLZYgjQnaqqBGjjeR9UXA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",La Nacion Plus
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/LaNacionTV
 #EXTINF:-1 tvg-name="C5N" tvg-language="Spanish" tvg-country="AG" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngwPr7UlHCo57cDSnC48GispybmWzy2MjsoY9fqzQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",C5N
@@ -71,8 +69,6 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/NASAtelevision
 #EXTINF:-1 tvg-name="Space Videos" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhJwS4dNhDO2CZEBpbWelJ6U9YfovHTZM3PiKpy2Q=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Space",Space Videos
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/ouramazingspace
-#EXTINF:-1 tvg-name="CosmoSapiens" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhtjiQ8qJtNDcF9pumlod9ziXH5o0WaC2zRrH9Ekg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Space",CosmoSapiens
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UC3ZODI-xZfdPanPP6tKUg9g
 #EXTINF:-1 tvg-name="Factnomenal" tvg-logo="https://yt3.ggpht.com/2BL8HCZqU6z4YkbSoYk2DspfJU9BGxNPMvvEm8lUFfugee-VR6A-0pCiu8SwOYUttOmlY3mU4Q=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Space",Factnomenal
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/c/Factnomenal
 #EXTINF:-1 tvg-name="RailWay" tvg-language="English" tvg-country="NO" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhXasbVGZU0HgNdEG6LtPmR032TPmwrDsZR6taGrg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",RailWay
