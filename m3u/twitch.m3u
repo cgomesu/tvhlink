@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="HasanAbi" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/ytc/AMLnZu-tB6X0SNpmxXglzp_n2pEPR_S9lAbJ0MTk0SK73A=s176-c-k-c0x00ffffff-no-rj-mo",HasamAbi
+#EXTINF:-1 tvg-name="HasanAbi" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/ytc/AMLnZu-tB6X0SNpmxXglzp_n2pEPR_S9lAbJ0MTk0SK73A=s176-c-k-c0x00ffffff-no-rj-mo",HasanAbi
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/hasanabi
 #EXTINF:-1 tvg-name="jwonggg" tvg-language="English" tvg-country="CA" tvg-logo="https://yt3.ggpht.com/4Wz5AO_e2Pny_8QtgFUFZAHJCxaB32PpSEcaBjMnNAgQmsWZunIxu86bLl1uLRnSCimWC8VB=s176-c-k-c0x00ffffff-no-rj-mo",jwonggg
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/jwonggg
