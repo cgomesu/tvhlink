@@ -53,6 +53,8 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCiGOIXjFqy5_mUNxQNOMfHw
 #EXTINF:-1 tvg-name="Explore Farm Life" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngboT1EAetLSOelxXa7eJ0kfKWFLdZo4mmh_VMwNg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",Explore Farm Life
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCMWAvusUV2eeVVHZDKiMKrw
+#EXTINF:-1 tvg-name="Africam" tvg-language="English" tvg-country="SA" tvg-logo="https://yt3.googleusercontent.com/ytc/AMLnZu8u-vKtIOFIkufwx_QJM3sA1rmt2TgqR2PC2Ca7lA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",Africam
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UCuoNAKa3P0QR1Lw9QdpmoVg
 #EXTINF:-1 tvg-name="Cornell Lab Bird Cams" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhiczEcwgy0nyUEhPvD9yjufrVIty-7r2na873L=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",Cornell Lab Bird Cams
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCZXZQxS3d6NpR-eH_gdDwYA
 #EXTINF:-1 tvg-name="Explore Birds Bats Bees" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngEsW408hXYvl3pbfV054Yy6wrQ87BJbidoAQPDhA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Webcam",Explore Birds Bats Bees
