@@ -12,6 +12,9 @@
 # Repo: https://github.com/cgomesu/tvhlink
 ###########################################################################################
 # Notes
+#  - System-wide Python3 pkgs now managed by APK. 'testing' repo of the 'edge' branch seems
+#    to be pretty quick with release updates.
+#  - PEP 668 in Python 3.11 disables global pip3 install
 #  - Linuxserver.io changed location of custom scripts dir from /config/custom-cont-init.d
 #    to /custom-cont-init.d
 #  - Python 3.10.1 (edge branch) changes Python pkg directory
@@ -27,7 +30,7 @@
 #  ghcr.io/linuxserver/tvheadend
 #
 # Script installs or upgrades the following pkg:
-#  python3, python3-dev, pip, setuptools, streamlink
+#  python3, streamlink
 #
 # Tested images (tvheadend:latest):
 #  arm64:
@@ -38,7 +41,7 @@
 APK_BRANCH='edge'
 APK_MAIN="http://dl-cdn.alpinelinux.org/alpine/${APK_BRANCH:-edge}/main"
 APK_COMMUNITY="http://dl-cdn.alpinelinux.org/alpine/${APK_BRANCH:-edge}/community"
-APK_PY3_LXML='4.6.4'
+APK_TESTING="http://dl-cdn.alpinelinux.org/alpine/${APK_BRANCH:-edge}/testing"
 
 # takes msg ($1) and status ($2) as args
 end () {
@@ -73,58 +76,16 @@ check_root () {
   if [ "$(id -u)" -eq 0 ]; then return 0; else return 1; fi
 }
 
-python3_upgrade () {
-  message "APK: Installing packages from the $APK_BRANCH branch." 'info'
-  if ! apk add --upgrade --no-cache -X "$APK_MAIN" -X "$APK_COMMUNITY" python3 py3-pip "py3-lxml>$APK_PY3_LXML"; then
-    end "APK: Critical error. Unable to upgrade or install Python3 and related packages from Alpine's $APK_BRANCH branch." 1
+streamlink_apk () {
+  if ! apk add --upgrade -U -X "$APK_MAIN" -X "$APK_COMMUNITY" -X "$APK_TESTING" streamlink; then
+    end 'APK: Critical error. Unable install required packages. Check previous messages.' 1
   fi
 }
 
-streamlink_install () {
-  message 'APK and PIP3: Installing required packages.' 'info'
-  # install temporary build dependencies in .build-deps from default /etc/apk/repositories
-  # this is required for building a few of the streamlink dependencies
-  if ! apk add --no-cache --virtual .build-deps gcc musl-dev; then
-    end 'APK: Critical error. Unable install required packages.' 1
-  fi
-
-  if check_py3_pkg_exist pip; then
-    # upgrade setuptools and pip before streamlink installation
-    if ! pip3 install --no-cache-dir -U setuptools pip; then 
-      message 'PIP3: Error while upgrading setuptools and pip.' 'error'
-    fi
-    # after upgrade, let pip3 try to install streamlink until it succeed
-    message 'PIP3: Installing Streamlink.' 'info'
-    pip3 install --no-cache-dir streamlink
-  else
-    message 'PIP3: Critical error. pip3 should be installed but is not.' 'error'
-  fi
-
-  # cleanup for temporary apk build dependencies
-  message 'APK: Removing packages no longer required.' 'info'
-  apk del .build-deps
-
-  # check that script succeeded to install streamlink or raise critical error
-  if ! check_py3_pkg_exist streamlink; then
-    end 'PIP3: Critical error. Cannot find Streamlink. Check above for installation errors.' 1
-  fi
+python3_remove_all () {
+  message 'APK: Python3 packages are now going to be managed by APK instead of PIP.' 'warning'
+  apk del --no-cache streamlink py3-lxml py3-requests py3-pip python3
 }
-
-streamlink_upgrade () {
-  if check_py3_pkg_exist pip; then
-    # upgrade setuptools and pip first
-    if ! pip3 install --no-cache-dir -U setuptools pip; then
-      message 'PIP3: Error while upgrading setuptools and pip.' 'error'
-    fi 
-    # upgrade streamlink last and exit on error
-    if ! pip3 install --no-cache-dir -U streamlink; then
-      end "PIP3: Critical error. Unable to upgrade Streamlink. Current version is still $(streamlink --version)." 1
-    fi
-  else
-    end 'PIP3: Critical error. pip3 should be installed but is not.' 1
-  fi
-}
-
 
 ############
 # main logic
@@ -134,16 +95,12 @@ trap "end 'Received a signal to stop' 1" INT HUP TERM
 
 if ! check_root; then end 'User is not root. This script needs root permission.' 1; fi
 
-# upgrade to the latest available Python3 version and related APK packages
-# see https://github.com/cgomesu/tvhlink/issues/10
-# see https://github.com/cgomesu/tvhlink/issues/12
-message 'Upgrading Python3...' 'info'; python3_upgrade
+# for backward compatibility, let APK manage Python3 pkgs
+# see https://github.com/cgomesu/tvhlink/issues/21
+if check_py3_pkg_exist pip; then python3_remove_all; fi
+message 'Installing/upgrading Streamlink...' 'info'
+streamlink_apk
 
-if check_py3_pkg_exist streamlink; then
-  message 'Upgrading Streamlink...' 'info'; streamlink_upgrade
-else
-  message 'Installing Streamlink...' 'info'; streamlink_install
-fi
-
+# EOF
 message "Streamlink version: $(streamlink --version)." 'info'
 end 'Reached EOF without critical errors.' 0
