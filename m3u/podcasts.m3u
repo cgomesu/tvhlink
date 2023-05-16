@@ -1,0 +1,3 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="H3 Podcast" tvg-language="English" tvg-country="EN" tvg-logo="https://yt3.googleusercontent.com/ytc/AGIKgqNqAr6fcYzYMoDrQcM6H923BCWJsC8OVeWtz0IxtQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Podcast",H3 Podcast
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@H3Podcast
