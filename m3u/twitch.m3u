@@ -3,8 +3,4 @@
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/hasanabi
 #EXTINF:-1 tvg-name="jwonggg" tvg-language="English" tvg-country="CA" tvg-logo="https://yt3.ggpht.com/4Wz5AO_e2Pny_8QtgFUFZAHJCxaB32PpSEcaBjMnNAgQmsWZunIxu86bLl1uLRnSCimWC8VB=s176-c-k-c0x00ffffff-no-rj-mo",jwonggg
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/jwonggg
-#EXTINF:-1 tvg-name="Tampa Never Sleeps" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/ytc/AGIKgqMIYwmshJwMnjb6vGbperAO-zs3UOCqYEHar4QPgg=s176-c-k-c0x00ffffff-no-rj-mo",Tampa Never Sleeps
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/tampaneversleeps
-#EXTINF:-1 tvg-name="CEO Gaming" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/ytc/AGIKgqO4i5bSnF5rYBRY2PazW-0r543AwKzJtsktagErxw=s176-c-k-c0x00ffffff-no-rj-mo",CEO Gaming
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/ceogaming
 
