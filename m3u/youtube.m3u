@@ -107,7 +107,5 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/user/musicbrokersarg
 #EXTINF:-1 tvg-name="Nightride FM" tvg-logo="https://yt3.ggpht.com/04tHcjjExWHYgBtyKhN1wFlp1S4-vDIFVqtXV6ipDK4SPPJCRZhW6qdJlvihzBmXMLZY2f9O=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",Nightride FM
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UCJ80_CMnIOrKtMyFbIFIQ7A
-#EXTINF:-1 tvg-name="Danheim" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhPHEiJZ0Cd8AYtgV7cul8bhlZh6PPCizrhHr-0VQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Danheim
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCLTQVYwu-M-MnfOJDKlFnOQ
 #EXTINF:-1 tvg-name="Tomorrowland" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngAazUG-vmIz9cu8ZrHBTah9mLxTk4BeLN9FwX-jA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Tomorrowland
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/TomorrowlandChannel
