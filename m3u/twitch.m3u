@@ -1,11 +1,11 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="HasanAbi" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/ytc/AMLnZu-tB6X0SNpmxXglzp_n2pEPR_S9lAbJ0MTk0SK73A=s176-c-k-c0x00ffffff-no-rj-mo",HasanAbi
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/hasanabi
+pipe:///usr/bin/env streamlink --stdout -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/hasanabi
 #EXTINF:-1 tvg-name="jwonggg" tvg-language="English" tvg-country="CA" tvg-logo="https://yt3.ggpht.com/4Wz5AO_e2Pny_8QtgFUFZAHJCxaB32PpSEcaBjMnNAgQmsWZunIxu86bLl1uLRnSCimWC8VB=s176-c-k-c0x00ffffff-no-rj-mo",jwonggg
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/jwonggg
+pipe:///usr/bin/env streamlink --stdout -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/jwonggg
 #EXTINF:-1 tvg-name="evo" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/6iFso7Uz9DYCSgW3CKmftJAkBLYqpmv7DUwZ7bOEXV47OX7CozGIuHdEAPb9D5fqOVROZkacLGg=s176-c-k-c0x00ffffff-no-rj-mo",evo
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/evo
+pipe:///usr/bin/env streamlink --stdout -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/evo
 #EXTINF:-1 tvg-name="miekii" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/ytc/AOPolaRNISTamxaDE3EQ_8mriq0FDklbx_LzBJgZGueboQKFkV7nqwC-_qIk5see-8Go=s176-c-k-c0x00ffffff-no-rj",miekii
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/miekii
+pipe:///usr/bin/env streamlink --stdout -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/miekii
 #EXTINF:-1 tvg-name="MrHorologist" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/ytc/AOPolaQwsnbeLr9VVfYh4SN-04JPOId0rr8_vVmA4IO9=s176-c-k-c0x00ffffff-no-rj-mo",MrHorologist
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/mr_horologist
+pipe:///usr/bin/env streamlink --stdout -4 --default-stream 720p60,480p --twitch-disable-ads --url https://www.twitch.tv/mr_horologist
