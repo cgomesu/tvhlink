@@ -97,8 +97,6 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/c/steezyasfvck
 #EXTINF:-1 tvg-name="Cafe de Anatolia" tvg-language="English" tvg-country="EN" tvg-logo="https://yt3.googleusercontent.com/ytc/AMLnZu_c8qXuQcquz2P1RvkCjpSo8Bu8-wpeOIXfWAq5Yg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Cafe de Anatolia
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@CafeDeAnatolia
-#EXTINF:-1 tvg-name="Cafe del Mar" tvg-language="English" tvg-country="ES" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhopfwwc4cdopyicbV4yQB3QjhX69ytKkY0IDFguQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Cafe del Mar
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/cafedelmar
 #EXTINF:-1 tvg-name="Future House Radio" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/ytc/APkrFKbLLiKJdlrXVDzNp1Ybg0lclnz5KRWsx-fxp-ZEVQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Future House Radio
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@PerfectSound
 #EXTINF:-1 tvg-name="ChillYourMind" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngllEUxqCL-Lnj4nDuGoS5Dejp6GTjsdYrefC1XBQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",ChillYourMind
