@@ -105,3 +105,12 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UCJ80_CMnIOrKtMyFbIFIQ7A/live
 #EXTINF:-1 tvg-name="Tomorrowland" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngAazUG-vmIz9cu8ZrHBTah9mLxTk4BeLN9FwX-jA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Tomorrowland
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/TomorrowlandChannel/live
+#EXTINF:-1 tvg-name="Cozy Cottage" tvg-logo="https://yt3.googleusercontent.com/Y1yhHH5LvEEU5cwzxJQ-ubaRpUuhzfkILTEbEOMktxXB-lHm9D4K3XGAtC-DGcxDZZKD4OkQcgk=s176-c-k-c0x00ffffff-no-rj" group-title="Xmas",Cozy Cottage
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@CozyCottage/live
+#EXTINF:-1 tvg-name="Soothing Christmas Music" tvg-logo="https://yt3.googleusercontent.com/UHbffDIqI1O2VyuJ3Ww-1DNvL6VVt1clNM4j_vyOF9rbk65mw96nueeh9bhxE3mExi6SD60KeZc=s176-c-k-c0x00ffffff-no-rj" group-title="Xmas",Soothing Christmas Music
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@soothingchristmasmusic/live
+#EXTINF:-1 tvg-name="Best Christmas Carols" tvg-logo="https://yt3.googleusercontent.com/LneM1qITvdPFWXoP35iisqz1QDOslKuzyFu6nR-Q6kfLCjDe9QJsc2MZvse7EElFaXnQ61mAkg=s176-c-k-c0x00ffffff-no-rj" group-title="Xmas",Best Christmas Carols
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@bestchristmascarol2024/live
+#EXTINF:-1 tvg-name="Christmas Ambience" tvg-logo="https://yt3.googleusercontent.com/2sYYb_3kO4LGiT1kr9CEhLP2_d-YBrYRUI3b7L4grvlUqblyg1jz1lFX96NzeNkL3OzgifPd=s176-c-k-c0x00ffffff-no-rj" group-title="Xmas",Christmas Ambience
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@-ChristmasAmbience/live
+
