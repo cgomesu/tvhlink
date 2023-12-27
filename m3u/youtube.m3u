@@ -97,6 +97,10 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@CafeDeAnatolia/live
 #EXTINF:-1 tvg-name="Future House Radio" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/ytc/APkrFKbLLiKJdlrXVDzNp1Ybg0lclnz5KRWsx-fxp-ZEVQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Future House Radio
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@PerfectSound/live
+#EXTINF:-1 tvg-name="Gentleman" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/ytc/AIf8zZRrXXadDfNLutW9y5SRc0g9DTStxo4KhVaOdIJZ=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",Gentleman
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@Gentleman1/live
+#EXTINF:-1 tvg-name="Monstercat Silk" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/1FlCZJ9yMJcCyu9w0XVY6vuK8tkI9ooPyqENS3ansMc1stG7BKfDqlmPK9cyToDUrvlQARcX=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",Monstercat Silk
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@monstercatsilk/live
 #EXTINF:-1 tvg-name="ChillYourMind" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngllEUxqCL-Lnj4nDuGoS5Dejp6GTjsdYrefC1XBQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",ChillYourMind
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/ChillYourMind/live
 #EXTINF:-1 tvg-name="Music Brokers" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSrZiXZ-1fsayt4M4Heh5qdv0I47ZTQddsoTpmMnQ=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",Music Brokers
