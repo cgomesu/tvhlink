@@ -12,6 +12,8 @@
 # Repo: https://github.com/cgomesu/tvhlink
 ###########################################################################################
 # Notes
+#  - Streamlink is no longer being maintained by APK. Reverted installation to system-wide
+#    pip.
 #  - System-wide Python3 pkgs now managed by APK. 'testing' repo of the 'edge' branch seems
 #    to be pretty quick with release updates.
 #  - PEP 668 in Python 3.11 disables global pip3 install
@@ -34,7 +36,7 @@
 #
 # Tested images (tvheadend:latest):
 #  arm64:
-#   sha256:f14ee2a6c645286078c755a16a055f93860ceeb65d5e3f54ab61168e6b70b20b
+#   sha256:sha256:f91e8fcf8e1f7dbfb1001aebc9e5568deba4867e5a2504bdae3b4f1664fb73c3
 ###########################################################################################
 
 # apk variables
@@ -66,11 +68,6 @@ start () {
   echo '***********************************************'
 }
 
-#takes a python3 pkg as argument ($1)
-check_py3_pkg_exist () {
-  if python3 -c "import $1" > /dev/null 2>&1; then return 0; else return 1; fi
-}
-
 # checks user is root
 check_root () {
   if [ "$(id -u)" -eq 0 ]; then return 0; else return 1; fi
@@ -82,10 +79,18 @@ streamlink_apk () {
   fi
 }
 
-python3_remove_all () {
-  message 'APK: Python3 packages are now going to be managed by APK instead of PIP.' 'warning'
-  apk del --no-cache streamlink py3-lxml py3-requests py3-pip python3
+requirements_apk () {
+  if ! apk add --upgrade -U -X "$APK_MAIN" -X "$APK_COMMUNITY" -X "$APK_TESTING" python3 py3-pip; then
+    end 'APK: Critical error. Unable install required packages. Check previous messages.' 1
+  fi
 }
+
+streamlink_pip () {
+  if ! python3 -m pip install -U --break-system-packages streamlink; then
+    end 'PIP: There was an error installing streamlink via pip. Check previous messages.' 1
+  fi
+}
+
 
 ############
 # main logic
@@ -95,11 +100,16 @@ trap "end 'Received a signal to stop' 1" INT HUP TERM
 
 if ! check_root; then end 'User is not root. This script needs root permission.' 1; fi
 
-# for backward compatibility, let APK manage Python3 pkgs
-# see https://github.com/cgomesu/tvhlink/issues/21
-if check_py3_pkg_exist pip; then python3_remove_all; fi
+# reverting installation mode to system-wide pip.
+# see https://github.com/cgomesu/tvhlink/issues/29
+message 'Installing/upgrading Python3 and pip...' 'info'
+requirements_apk
 message 'Installing/upgrading Streamlink...' 'info'
-streamlink_apk
+streamlink_pip
+
+# #uncomment to try to install it via apk, if the pkg is currently being maintained
+# #see https://pkgs.alpinelinux.org/packages
+# streamlink_apk
 
 # EOF
 message "Streamlink version: $(streamlink --version)." 'info'
