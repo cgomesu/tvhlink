@@ -3,9 +3,7 @@
 pipe:///bin/sh /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/saude"
 #EXTINF:-1 tvg-name="UnBTV" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRTtlHF57R0Xmaf-zcV9gZ-83S5p-xhH-_Ru2Vx3w=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",UnBTV
 pipe:///bin/sh /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/unb-tv"
-#EXTINF:-1 tvg-name="UPFTV" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLR05T9UX9WpnMURB0m0O5-3LqxmF68RhnrkQ3FGNA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",UPFTV
-pipe:///bin/sh /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/upftv"
-#EXTINF:-1 tvg-name="TVU" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLQ4-_Myg2hJzRufQJw1FV67Uau-XbrSTbJlUwNUtA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",TVU
-pipe:///bin/sh /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/TVU"
+#EXTINF:-1 tvg-name="TV Unesp" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLQ4-_Myg2hJzRufQJw1FV67Uau-XbrSTbJlUwNUtA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",TV Unesp
+pipe:///bin/sh /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/tvunesp-aovivo"
 #EXTINF:-1 tvg-name="TV UFOP" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSyvUpbDBoSfntT0KGITIcWsz0_PiRT_syT1GbwRA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Educational",TV UFOP
 pipe:///bin/sh /config/tools/eduplay.sh "https://eduplay.rnp.br/portal/tv/ufop"
