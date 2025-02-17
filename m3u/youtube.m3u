@@ -105,3 +105,33 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/TomorrowlandChannel/live
 #EXTINF:-1 tvg-name="Nightride FM" tvg-logo="https://yt3.ggpht.com/04tHcjjExWHYgBtyKhN1wFlp1S4-vDIFVqtXV6ipDK4SPPJCRZhW6qdJlvihzBmXMLZY2f9O=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",Nightride FM
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UCJ80_CMnIOrKtMyFbIFIQ7A/live
+#EXTINF:-1 tvg-name="CNBC Arabia TV" tvg-language="Arabic" tvg-country="UAE" tvg-logo="" group-title="News",CNBC Arabia TV
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/user/cnbcarabiaTV/live
+#EXTINF:-1 tvg-name="AlJazeera Arabic" tvg-language="Arabic" tvg-country="QA" tvg-logo="" group-title="News",AlJazeera Arabic
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@aljazeera/live
+#EXTINF:-1 tvg-name="Al Jazeera Documentary" tvg-language="Arabic" tvg-country="QA" tvg-logo="" group-title="News",Al Jazeera Documentary
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/aljazeeradocumentary/live
+#EXTINF:-1 tvg-name="Sky News Arabia" tvg-language="Arabic" tvg-country="UAE" tvg-logo="" group-title="News",Sky News Arabia
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/user/SkyNewsArabia/live
+#EXTINF:-1 tvg-name="AlHadath" tvg-language="Arabic" tvg-country="KSA" tvg-logo="" group-title="News",AlHadath
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/AlHadath/live
+#EXTINF:-1 tvg-name="AlArabiya" tvg-language="Arabic" tvg-country="KSA" tvg-logo="" group-title="News",AlArabiya
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/user/AlArabiya/live
+#EXTINF:-1 tvg-name="Alhurra" tvg-language="Arabic" tvg-country="USA" tvg-logo="" group-title="News",Alhurra
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/user/alhurra/live
+#EXTINF:-1 tvg-name="BBC News Arabic" tvg-language="Arabic" tvg-country="UK" tvg-logo="" group-title="News",BBC News Arabic
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/bbcarabic/live
+#EXTINF:-1 tvg-name="DW Arabic" tvg-language="Arabic" tvg-country="DE" tvg-logo="" group-title="News",DW Arabic
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/dwarabic/live
+#EXTINF:-1 tvg-name="Asharq News" tvg-language="Arabic" tvg-country="KSA" tvg-logo="" group-title="News",Asharq News
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/AsharqNews/live
+#EXTINF:-1 tvg-name="AlEkhbariya News" tvg-language="Arabic" tvg-country="KSA" tvg-logo="" group-title="News",AlEkhbariya News
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/SaudiNewsTV/live
+#EXTINF:-1 tvg-name="FRANCE 24 Arabic" tvg-language="Arabic" tvg-country="FR" tvg-logo="" group-title="News",FRANCE 24 Arabic
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/user/France24arabic/live
+#EXTINF:-1 tvg-name="AlarabyTv News" tvg-language="Arabic" tvg-country="QA" tvg-logo="" group-title="News",AlarabyTv News
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/AlarabyTv_News/live
+#EXTINF:-1 tvg-name="Asharq Discovery" tvg-language="Arabic" tvg-country="UAE" tvg-logo="" group-title="News",Asharq Discovery
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@AsharqDiscovery/live
+#EXTINF:-1 tvg-name="beIN SPORTS News" tvg-language="Arabic" tvg-country="QA" tvg-logo="" group-title="Sports",beIN SPORTS News
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/user/beINSPORTS/live
