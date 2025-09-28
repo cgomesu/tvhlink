@@ -1,11 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-name="CBS News (US)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjvQz8v5yU3aNJ9YPLkCC9DejFuobFpZ4Pmn1z6=s176-c-k-c0x00ffffff-no-rj" group-title="News",CBS News (US)
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www.cbsnews.com/live/
-#EXTINF:-1 tvg-name="CNN Portugal (PT)" tvg-language="Portuguese" tvg-country="PT" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLR83pYhPHglVE3E0OulUW1VwsQ94mXIzRjniiukRg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",CNN Portugal (PT)
-pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://tviplayer.iol.pt/direto/CNN
 #EXTINF:-1 tvg-name="NHK Worl-Japan (JP)" tvg-language="English" tvg-country="JP" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLQ9ItuDialCNXYh2ue_wnjMND6mh3JIWPLfDprFZw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Variety",NHK World-Japan (JP)
 pipe:///usr/bin/env streamlink --stdout --default-stream 720p,best --url https://www3.nhk.or.jp/nhkworld/en/live/
 #EXTINF:-1 tvg-name="Olympics TV (EN)" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRCFpu_biul8hGuPLuvU8l63Qmz4JLa0u8Pq_HarC0=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Sports",Olympics TV (EN)
 pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://olympics.com/en/live/
-#EXTINF:-1 tvg-name="Radios Gold TV (BR)" tvg-language="Portuguese" tvg-country="BR" tvg-logo="https://img.radios.com.br/radio/lg/radio49626_1498818875.png" group-title="Music",Radios Gold TV (BR)
-pipe:///usr/bin/env streamlink --stdout --default-stream best --url https://srv4.zcast.com.br/goldtv/goldtv/playlist.m3u8
