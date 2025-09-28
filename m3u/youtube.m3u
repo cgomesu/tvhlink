@@ -15,8 +15,6 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/skynews/live
 #EXTINF:-1 tvg-name="Al Jazeera English" tvg-language="English" tvg-country="QA" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjQUqXvG-C_hEeRySPaaGMS1REtGd05a9RSLwIj7xc=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",Al Jazeera English
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/AlJazeeraEnglish/live
-#EXTINF:-1 tvg-name="Al Jazeera Balkans" tvg-language="Serbo-Croatian" tvg-country="BA" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLQzI3cLx-vjGPLNo3XCsDlOwxNC-NSxqb4H_ZC66g=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",Al Jazeera Balkans
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/c/ajbalkans/live
 #EXTINF:-1 tvg-name="France 24 English" tvg-language="English" tvg-country="FR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnjQokqv8-b-XLH34XJulaY0W27AzlCmyeEY7TayMw=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",France 24 English
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/france24english/live
 #EXTINF:-1 tvg-name="France 24" tvg-language="French" tvg-country="FR" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngwSBIFO5UNdycjzkUjIRFEq0n5YWKTOgsfbgKdoQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",France 24
@@ -49,8 +47,6 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/AlHadath/live
 #EXTINF:-1 tvg-name="AlArabiya" tvg-language="Arabic" tvg-country="KSA" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_mfOznnvOkkyg9C_i9-OW5ZYWX8T-27kVpbXvv43OAggb8=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",AlArabiya
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/user/AlArabiya/live
-#EXTINF:-1 tvg-name="Alhurra" tvg-language="Arabic" tvg-country="USA" tvg-logo="https://yt3.ggpht.com/oK4Vb2KYUM7Rgr2sdSBPniMLjYj6pamETnD9fIC33ToKy9Lfhw02HHvdMFrgbDYsPuM5IuILsQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",Alhurra
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/user/alhurra/live
 #EXTINF:-1 tvg-name="BBC News Arabic" tvg-language="Arabic" tvg-country="UK" tvg-logo="https://yt3.ggpht.com/2Eh1cB5sE_u9DUbz3N9OMdzWSBrCmi04eLlVz3fJBO3vKqlrG47QFna-U1g3a9aRuCPvjWLcVhM=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",BBC News Arabic
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/bbcarabic/live
 #EXTINF:-1 tvg-name="DW Arabic" tvg-language="Arabic" tvg-country="DE" tvg-logo="https://yt3.ggpht.com/1diREnd5d5mj0zM8AmZYfuccwIppbzSBz0ERjzRl9kydXSPKREif3GyigSpYq2P_d8GH0RMKj5I=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",DW Arabic
@@ -111,21 +107,17 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/c/steezyasfvck/live
 #EXTINF:-1 tvg-name="Cafe de Anatolia" tvg-language="English" tvg-country="EN" tvg-logo="https://yt3.googleusercontent.com/ytc/AMLnZu_c8qXuQcquz2P1RvkCjpSo8Bu8-wpeOIXfWAq5Yg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Cafe de Anatolia
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@CafeDeAnatolia/live
-#EXTINF:-1 tvg-name="Future House Radio" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/ytc/APkrFKbLLiKJdlrXVDzNp1Ybg0lclnz5KRWsx-fxp-ZEVQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Future House Radio
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@PerfectSound/live
 #EXTINF:-1 tvg-name="Gentleman" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/ytc/AIf8zZRrXXadDfNLutW9y5SRc0g9DTStxo4KhVaOdIJZ=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",Gentleman
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@Gentleman1/live
-#EXTINF:-1 tvg-name="Monstercat Silk" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/1FlCZJ9yMJcCyu9w0XVY6vuK8tkI9ooPyqENS3ansMc1stG7BKfDqlmPK9cyToDUrvlQARcX=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",Monstercat Silk
+#EXTINF:-1 tvg-name="Monstercat Silk" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/VmwWA_exW4qoX1YSPfCJlpDh3lDjguBsaXSSPu6yltzZoLcu7oXvcCAUUheg8SLLzGWvnURTbA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Monstercat Silk
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@monstercatsilk/live
 #EXTINF:-1 tvg-name="ChillYourMind" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngllEUxqCL-Lnj4nDuGoS5Dejp6GTjsdYrefC1XBQ=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",ChillYourMind
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/ChillYourMind/live
 #EXTINF:-1 tvg-name="Music Brokers" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLSrZiXZ-1fsayt4M4Heh5qdv0I47ZTQddsoTpmMnQ=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",Music Brokers
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/user/musicbrokersarg/live
-#EXTINF:-1 tvg-name="Best of Mix" tvg-logo="https://yt3.ggpht.com/X9UWmONVIL6FdQwxWHKKR1xMk2STxVgMmry9juvjnDvrscQyteKRtVIWtrAyDbe5dHrPgnIvrTg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Best of Mix
-pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@bestofmixlive/live
 #EXTINF:-1 tvg-name="947 Joburg" tvg-logo="https://yt3.ggpht.com/3ake2ldjsIFb9L4kb-Og67ossakR6SR9hIS5hwz_sczqwIOrwrBhalXW4OA87o4Xh0731ovg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",947 Joburg
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@947Joburg/live
 #EXTINF:-1 tvg-name="Tomorrowland" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwngAazUG-vmIz9cu8ZrHBTah9mLxTk4BeLN9FwX-jA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Tomorrowland
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/TomorrowlandChannel/live
-#EXTINF:-1 tvg-name="Nightride FM" tvg-logo="https://yt3.ggpht.com/04tHcjjExWHYgBtyKhN1wFlp1S4-vDIFVqtXV6ipDK4SPPJCRZhW6qdJlvihzBmXMLZY2f9O=s176-c-k-c0x00ffffff-no-rj" group-title="Radio",Nightride FM
+#EXTINF:-1 tvg-name="Nightride FM" tvg-logo="https://yt3.ggpht.com/U_bXLU8CTmYo3LHxZP00zxYnL5wE6socvOK4B5oOymD4r82a3Dyr09n21N0ZmCWBilmygCUpubU=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Nightride FM
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UCJ80_CMnIOrKtMyFbIFIQ7A/live
