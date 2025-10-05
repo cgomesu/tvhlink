@@ -121,3 +121,5 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/TomorrowlandChannel/live
 #EXTINF:-1 tvg-name="Nightride FM" tvg-logo="https://yt3.ggpht.com/U_bXLU8CTmYo3LHxZP00zxYnL5wE6socvOK4B5oOymD4r82a3Dyr09n21N0ZmCWBilmygCUpubU=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Nightride FM
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UCJ80_CMnIOrKtMyFbIFIQ7A/live
+#EXTINF:-1 tvg-name="Mojo TV" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_kcVj7cIhHdbJ20HLfzxbMMv15HW3k4y4Tp1rw10ilfz8M=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Variety",MojoTV
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@WatchMojo/live
