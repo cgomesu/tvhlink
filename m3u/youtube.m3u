@@ -93,6 +93,10 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/user/HinduCowGirl/live
 #EXTINF:-1 tvg-name="CaSeismograph" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnhyQp0PdRax8E-U08aw55USD0C1dYUE-w6GdbOJhg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Data",CaSeismograph
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://youtube.com/channel/UCBsPEHBugPQbNzX6fbQBHgw/live
+#EXTINF:-1 tvg-name="CBC Music" tvg-logo="https://yt3.ggpht.com/PFujg06kCSfYHqUGghZtM_Y0YgJRkiUbSOnael5D1YaTDGv7zXSMlOTXLGc7mApUBnueDxWOyA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",CBC Music
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@cbcmusic/live
+#EXTINF:-1 tvg-name="Classical Music Radio" tvg-logo="https://yt3.ggpht.com/YRctDyNcqG_P7VUlKM_Gxt17r1HTtf5XxqqVVWeD0VO8R_tW6BHDgPm7hjjlPzfc9V2d6-K8zU4=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Classical Music Radio
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@classicalmusicradio_/live
 #EXTINF:-1 tvg-name="Soothing Relaxation" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLRwAV9Krb527QrhWRaeK0nzoiIVkLcRSqlu8qLCHg=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Radio",Soothing Relaxation
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UCjzHeG1KWoonmf9d5KBvSiw/live
 #EXTINF:-1 tvg-name="BGM channel" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/ytc/AAUvwnge4YmlDkuJK2x-e6jBYHUtfyYrdA7w4PddriPa=s800-c-k-c0xffffffff-no-rj-mo" group-title="Radio",BGM channel
