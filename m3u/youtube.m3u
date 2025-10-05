@@ -33,7 +33,7 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UC_gUM8rL-Lrg6O3adPW9K1g/live
 #EXTINF:-1 tvg-name="TRT World" tvg-language="English" tvg-country="TR" tvg-logo="https://yt3.ggpht.com/ytc/AKedOLS6F38gUVFlgqPibPvR34XXRpDMfoGSUzDM2n1tuGo=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",TRT World
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/channel/UC7fWeaHhqgM4Ry-RMpM2YYw/live
-#EXTINF:-1 tvg-name="CNBC" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.googleusercontent.com/sPhNL3tZ0hBV2WYCvPAIGAYQ_E0fiunw2TQlyDJuYAQbyVnA6Ad3Ovbo-C7gJ7uU7fVnC39NSQ=s176-c-k-c0x00ffffff-no-rj" group-title="News",CNBC
+#EXTINF:-1 tvg-name="CNBC" tvg-language="English" tvg-country="US" tvg-logo="https://yt3.ggpht.com/rkKj6aQsYMytXxqeLCRF1AnmUNYehzbWF7YoT6pIzp42JDZhG_5_Q8ABJqhpofOhCP2cAKL_icE=s176-c-k-c0x00ffffff-no-rj-mo" group-title="News",CNBC
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@CNBC/live
 #EXTINF:-1 tvg-name="United Nations" tvg-language="English" tvg-country="UN" tvg-logo="https://yt3.googleusercontent.com/ytc/AIf8zZT1h7EAuZJSM4nnsACqhR7FW7xHcp3JAfjEVVSXgA=s176-c-k-c0x00ffffff-no-rj" group-title="News",United Nations
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@unitednations/live
