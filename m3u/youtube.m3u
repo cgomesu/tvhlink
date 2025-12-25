@@ -131,3 +131,5 @@ pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M 
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@MsMojo/live
 #EXTINF:-1 tvg-name="MST3K" tvg-logo="https://yt3.ggpht.com/Xu7YPdacZUJXVnJj1SHBEoyAu0cIl-_XQr2ne3_HuLfVH0A3nJG27tYHRqqd28Dx0kxYeJ1VxA=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Variety",MST3K
 pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@MST3K/live
+#EXTINF:-1 tvg-name="NHK" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_m9YDtPWqgZW91_-QTdsVWLbnR0ZQ1BaHX38ZcSRVGnfd0=s176-c-k-c0x00ffffff-no-rj-mo" group-title="Variety",NHK
+pipe:///usr/bin/env streamlink --stdout --hls-live-edge 6 --ringbuffer-size 32M -4 --default-stream 720p,best --url https://www.youtube.com/@NHKWORLDJAPAN/live
